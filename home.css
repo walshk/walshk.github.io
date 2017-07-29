@@ -6,6 +6,15 @@ body{
 
 h1 {
   text-align: center;
+  font-family: Verdana;
+}
+
+h2 {
+  font-family: Verdana;
+}
+
+p {
+  font-family: Verdana;
 }
 
 ul {
@@ -48,12 +57,13 @@ ul {
 .link a {
   font-size: 30px;
   text-decoration: none;
+  font-family: Verdana;
 }
 
 .link li {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 hr {
