@@ -46,19 +46,14 @@ hr {
   height: 10px;
 }
 
-p {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
 .footer {
   margin-top: 95%;
   margin-left: 10%;
 }
 
 .selfDescription {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .container {
