@@ -96,6 +96,7 @@ hr {
   text-decoration: underline;
 }
 
-.aboutInfo h3 {
+.aboutInfo h3, p {
   font-family: Verdana;
+  margin-right: 10%;
 }
