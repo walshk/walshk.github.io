@@ -1,3 +1,15 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.nav{
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
 body {
   background-color: aliceblue;
 }
@@ -48,7 +60,7 @@ ul {
 }
 
 .link a {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   font-family: sans-serif;
 }
@@ -97,15 +109,14 @@ hr {
 }
 
 .kevpic {
-  width: 20%;
+  width: 15%;
   height: auto;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 2%;
+  border-radius: 50%;
+  margin-left: 2%;
 }
 
 #page1, #page2, #page3 {
-  padding-bottom: 20%;
+  padding-bottom: 5%;
 }
 
 #page3 ul {
