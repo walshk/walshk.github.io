@@ -444,7 +444,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Amiko", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -2225,10 +2225,10 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Suez One", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #b24f43;
+  color: inherit;
   text-rendering: optimizeLegibility; }
   h1 small, .h1 small,
   h2 small, .h2 small,
@@ -2243,8 +2243,7 @@ h1, .h1 {
   font-size: 1.5rem;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 0.5rem; 
-  font-weight: bold;}
+  margin-bottom: 0.5rem; }
 
 h2, .h2 {
   font-size: 1.25rem;
@@ -2292,11 +2291,11 @@ h6, .h6 {
 
 a {
   line-height: inherit;
-  color: #3ebfbb;
+  color: #1779ba;
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #9dd5d4; }
+    color: #1468a0; }
   a img {
     border: 0; }
 
@@ -4879,7 +4878,7 @@ table {
     padding: 0.5rem 0.625rem 0.625rem; }
   table tbody tr:nth-child(even) {
     border-bottom: 0;
-    background-color: #9dd5d4; }
+    background-color: #f1f1f1; }
   table.unstriped tbody {
     background-color: #fefefe; }
     table.unstriped tbody tr {
@@ -5134,7 +5133,7 @@ a.thumbnail {
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #505050; }
+    background-color: #e6e6e6; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
