@@ -185,6 +185,7 @@
   z-index: 999;
   position: fixed;
   height: 10px;
+  opacity: 0.75;
 }
 
 .hero-full-screen .top-bar .menu {
