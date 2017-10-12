@@ -66,12 +66,11 @@
   bottom: 5px;
   position: relative;
   border-radius: 25%;
+  left: -4px;
 }
 
 
-.timeline .timeline-item .timeline-icon svg {
-  top: 14px;
-}
+
 
 
 .timeline .timeline-item .timeline-content {
@@ -156,7 +155,7 @@
 
 .hero-full-screen .middle-content-section {
   text-align: center;
-  color: #fefefe;
+  color: #f9fdfd;
 }
 
 .hero-full-screen .middle-content-section a, img {
@@ -185,6 +184,7 @@
   padding-right: 100%;
   z-index: 999;
   position: fixed;
+  height: 10px;
 }
 
 .hero-full-screen .top-bar .menu {
@@ -193,7 +193,7 @@
 }
 
 .hero-full-screen .top-bar .menu-text {
-  color: #fefefe;
+  color: #f9fdfd;
 }
 
 .hero-full-screen .top-bar .menu li {
@@ -206,7 +206,7 @@
 }
 
 .hero-full-screen .top-bar .menu a {
-  color: #fefefe;
+  color: #f9fdfd;
   font-family: Raleway, sans-serif;
   font-weight: thin;
   z-index: 1000;
@@ -217,6 +217,7 @@
   font-size: 4rem;
   font-weight: bold;
 }
+
 
 h1, h2,
 h3, h4,
