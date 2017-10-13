@@ -245,7 +245,28 @@ p {
   padding-left: 3%;
 }
 
+.container3 {
+  background-color: #c1eaeb;
+  padding-left: 3%;
+}
+
+body {
+  background-color: #c1eaeb;
+}
+
+
 .kevpic {
   border-radius: 65%;
 }
 
+table tbody {
+  border: none;
+}
+
+tr:nth-child(odd) {
+  background-color: #ace3e4; !important
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #7bd3d4; !important
+}
