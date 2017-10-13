@@ -156,6 +156,19 @@
 	<script>
 	  $(document).foundation();
 	</script>
+
+	<script>
+		$(document).ready(function() {
+			smoothScroll.init();
+			$("a").click(function() {
+				var regExp = new RegExp(/\/\/.+?(\/.+?)\#/);
+				if ( window.location.hash && window.location.pathname != regExp.exec(this.href)[1]) {
+				window.location.href = this.href;
+				}
+			});
+		});
+	</script>
+
   </body>
 </html>
 
