@@ -29,14 +29,12 @@ function hasScrolled() {
 			$('.top-bar')
 				.removeClass('nav-show')
 				.addClass('nav-hide');
-
 	  	} 
 	  	else {
 	    	// scrolled upwards
 	    	$('.top-bar')
 	    		.removeClass('nav-hide')
 	    		.addClass('nav-show');
-
 	  	}
 	  	
 	  	position = scroll;
