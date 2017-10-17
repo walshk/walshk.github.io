@@ -176,6 +176,10 @@
   width: 3.75rem;
 }
 
+.hero-full-screen .bottom-content-section path {
+  fill: #fefefe;
+}
+
 .hero-full-screen .top-bar {
   background-color: #37a7a9;
   text-align: center;
