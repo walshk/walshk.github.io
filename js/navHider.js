@@ -21,6 +21,13 @@ function hasScrolled() {
 	var scroll = $(window).scrollTop();	
 	//console.log(scroll);
 
+	if (scroll < position) {
+			// scrolled downwards
+			$('.top-bar')
+				.removeClass('nav-hide')
+				.addClass('nav-show');
+	  	} 
+
 	if(scroll > 800){
 		//console.log(scroll);
 
@@ -30,13 +37,6 @@ function hasScrolled() {
 				.removeClass('nav-show')
 				.addClass('nav-hide');
 	  	} 
-	  	else {
-	    	// scrolled upwards
-	    	$('.top-bar')
-	    		.removeClass('nav-hide')
-	    		.addClass('nav-show');
-	  	}
-	  	
 	  	position = scroll;
 	}
 
