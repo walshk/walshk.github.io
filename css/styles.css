@@ -174,7 +174,6 @@
 .hero-full-screen .bottom-content-section svg {
   height: 3.75rem;
   width: 3.75rem;
-  fill: #fefefe;
 }
 
 .hero-full-screen .top-bar {
@@ -209,7 +208,6 @@
 .hero-full-screen .top-bar .menu a {
   color: #f9fdfd;
   font-family: Raleway, sans-serif;
-  font-weight: thin;
   z-index: 1000;
 }
 
@@ -273,16 +271,15 @@ table tbody {
 }
 
 tr:nth-child(odd) {
-  background-color: #ace3e4; !important
+  background-color: #ace3e4;
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #7bd3d4; !important
+  background-color: #7bd3d4;
 }
 
 .hero-full-screen .nav-hide, 
 .hero-full-screen .nav-hide .menu a {
-  fill: transparent;
   color: transparent;
   background-color: transparent;
 
