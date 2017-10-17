@@ -1,7 +1,4 @@
 var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-
 var position = $(window).scrollTop(); // should start at 0
 
 $(window).scroll(function(event) {
