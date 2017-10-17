@@ -185,7 +185,7 @@
   z-index: 999;
   position: fixed;
   height: 10px;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .hero-full-screen .top-bar .menu {
@@ -278,4 +278,23 @@ tr:nth-child(odd) {
 
 table tbody tr:nth-child(even) {
   background-color: #7bd3d4; !important
+}
+
+.hero-full-screen .nav-hide, 
+.hero-full-screen .nav-hide .menu a {
+  fill: transparent;
+  color: transparent;
+  background-color: transparent;
+
+  -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.nav-show {
+  -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }

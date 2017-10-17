@@ -1,7 +1,8 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $(".top-bar").outerHeight();
+
+var position = $(window).scrollTop(); // should start at 0
 
 $(window).scroll(function(event) {
 	didScroll = true;
@@ -17,11 +18,31 @@ setInterval(function() {
 
 function hasScrolled() {
 
-	var st = $(this).scrollTop();
+	//console.log($('.container1').outerHeight());
 
-	if (Math.abs(lastScroolTop - st) <= delta) {
-		return;
+
+	var scroll = $(window).scrollTop();	
+	//console.log(scroll);
+
+	if(scroll > 800){
+		//console.log(scroll);
+
+		if (scroll > position) {
+			// scrolled downwards
+			$('.top-bar')
+				.removeClass('nav-show')
+				.addClass('nav-hide');
+
+	  	} 
+	  	else {
+	    	// scrolled upwards
+	    	$('.top-bar')
+	    		.removeClass('nav-hide')
+	    		.addClass('nav-show');
+
+	  	}
+	  	
+	  	position = scroll;
 	}
 
-	
 }
