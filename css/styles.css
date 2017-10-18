@@ -228,7 +228,7 @@ h5, h6, header {
     font-family: Raleway, sans-serif;
 }
 
-p {
+p, th, td {
   font-family: Open Sans, sans-serif;
 }
 
