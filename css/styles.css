@@ -230,6 +230,7 @@ h5, h6, header {
 
 p, th, td {
   font-family: Open Sans, sans-serif;
+  line-height: 1.25em;
 }
 
 .grid-x {
