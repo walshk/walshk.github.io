@@ -230,7 +230,8 @@
 
 h1, h2,
 h3, h4,
-h5, h6, header, th {
+h5, h6, 
+header, th, footer {
     font-family: Raleway, sans-serif;
     kerning: 0.25em;
 }
