@@ -74,7 +74,9 @@
 
 
 .timeline .timeline-item .timeline-content {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   text-align: right;
   transition: all 0.25s ease-in;
   width: 45%;
@@ -149,8 +151,8 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/../img/splash.jpg") center center repeat;
-  background-size: cover;
+  background: url("./../img/splash.jpg");
+  
 }
 
 .hero-full-screen .middle-content-section {
@@ -161,6 +163,10 @@
 .hero-full-screen .middle-content-section a, img {
   padding: 5%;
   padding-top: 0%;
+}
+
+.hero-full-screen .middle-content-section h1 {
+  kerning: 0.25rem;
 }
 
 .hero-full-screen .top-content-section {
@@ -224,14 +230,29 @@
 
 h1, h2,
 h3, h4,
-h5, h6, header {
+h5, h6, header, th {
     font-family: Raleway, sans-serif;
+    kerning: 0.25em;
 }
 
-p, th, td {
-  font-family: Open Sans, sans-serif;
+p, td, li {
+  font-family: Roboto, sans-serif;
   line-height: 1.25em;
 }
+
+#tabletopleft {
+  border-radius: 20px 0px 0px 0px;
+}
+#tabletopright {
+  border-radius: 0px 20px 0px 0px;
+}
+#tablebotleft {
+  border-radius: 0px 0px 0px 20px;
+}
+#tablebotright {
+  border-radius: 0px 0px 20px 0px;
+}
+
 
 .grid-x {
   padding-top: 2%;
@@ -249,12 +270,12 @@ p, th, td {
 }
 
 .container3 {
-  background-color: #c1eaeb;
+  background-color: #eaf8f8;
   padding-left: 3%;
 }
 
 .container4 {
-  background-color: #c1eaeb;
+  background-color: #eaf8f8;
   padding-left: 3%;
 }
 
@@ -263,9 +284,13 @@ p, th, td {
   padding-left: 3%;
 }
 
+.footer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 
 body {
-  background-color: #c1eaeb;
+  background-color: #eaf8f8;
 }
 
 
@@ -273,20 +298,12 @@ body {
   border-radius: 65%;
 }
 
-.container4 th {
-  border-radius: 15px 15px 0px 0px;
-}
-
-table tbody {
-  border: none;
-}
-
 tr:nth-child(odd) {
-  background-color: #ace3e4;
+  background-color: #d5f1f2;
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #7bd3d4;
+  background-color: #eaf8f8;
 }
 
 .hero-full-screen .nav-hide, 
