@@ -151,7 +151,7 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("./../img/splash.jpg");
+  background: linear-gradient(#2e8b8d, #d5f1f2);
   background-size: cover;
   
 }
