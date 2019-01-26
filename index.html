@@ -8,7 +8,21 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     
-    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+    <!-- d3 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/drawTechSkills.js"></script>
+    <script src="js/drawWorkExperience.js"></script>
+
 </head>
 <body>
     
@@ -16,29 +30,51 @@
 
     <!-- Pic and Bio Row -->
     <div id="pic-bio-row" class="row">
-        <div id="pic" class="col-sm-4">
-
+        <div id="pic" class="col-sm-4 section">
+            <h4 style="margin-left: 14%">Kevin R. Walsh</h4>
+            <img id="profile-pic" src="img/kevin.jpg">
+            
         </div>
-        <div id="bio" class="col-sm-8">
-
+        <div id="bio" class="col-sm-8 section">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>About Me</h4>
+                    <p>
+                        I'm a graduate of the University of Rochester having completed a B.S. in Business and a minor in Computer Science. I have experience in object-oriented programming with languages such as Java and Swift, as well as experience in analytical scripting using languages such as Python and R. I've also done some work on data visualizations using d3.js and Tableau. My professional interests lie primarily in the fields of Software Development and Data Science.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Technical Skills Visualization Row -->
     <div id="tech-skills-row" class="row">
+        tech-skills-row
+    </div>
 
+    <!-- Work Experience Title Row -->
+    <div id="work-exp-title-row" class="row">
+        <strong>Work Experience</strong>
     </div>
 
     <!-- Interactive Work Experience Row -->
     <div id="work-exp-row" class="row">
-
-    </div>
+        <div class="panel panel-default">
+            <div id="work-exp" class="panel-body">
+                work-exp
+            </div>
+        </div>
+    </div>  
 
 </div>
 
 
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        drawTechSkills('web_dev');
+        drawWorkExperience(0);
+    });
+</script>
 
 </body>
 </html>

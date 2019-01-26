@@ -1,0 +1,32 @@
+body {
+    background: #99cfe0;
+}
+
+.container {
+    padding: 2%;
+}
+
+
+#profile-pic {
+    width: auto;
+    height: 14vw;
+    border-radius: 100%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+
+    border: 10px double #e6bbad;
+
+}
+
+#bio {
+    margin-top: 5%;
+}
+
+#tech-skills-row {
+    max-height: 40%;
+}
+
+#work-exp-title-row {
+    padding-top: 1%;
+}
