@@ -24,12 +24,15 @@ var techSkill = {
     ]
 };
 
+var lastUsedSkill;
+
 
 /**
  * 
  * @param {Object} data - chosen tech skill data to draw
  */
 function drawTechSkills(name) {
+    lastUsedSkill = name;
 
     $('#tech-skills-row').empty();
 
@@ -55,7 +58,7 @@ function drawTechSkills(name) {
         .text('Technical Skills:');
 
     // add selector buttons
-    [["Web Dev", "web_dev"], ["Data Science", "data_science"], ["Data Visualization", "data_viz"], 
+    [["Web Development", "web_dev"], ["Data Science", "data_science"], ["Data Visualization", "data_viz"], 
     ["Mobile", "mobile"], ["Other", "other"]].forEach(function(d, i) {
 
         svg.append("rect")
