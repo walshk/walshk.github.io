@@ -22,8 +22,32 @@ function createModuleContent(moduleType, workPosition=null) {
     {
 
         const content = `
-
+            <div class="row" id="education-toprow">
+                <div class="col-md-4" id="educationLogo">
+                    <img class="img-thumbnail" src="img/rochester.png" alt="University of Rochester Logo">
+                </div>
+                <div class="col-md-8">
+                    <div class="row" id="educationName">
+                        <h2>University of Rochester</h2>
+                    </div>
+                    <div class="row" id="educationLocation">
+                        <h4>Rochester, NY</h4>
+                    </div>
+                    <div class="row" id="educationTimePeriod">
+                        <i>Graduated May 2018</i>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="education-botrow">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Bachelor of Science in Business (Business Analytics Track)</strong></li>
+                    <li class="list-group-item">Minor in Computer Science</li>
+                    <li class="list-group-item">Dean's List all semesters from Spring 2016 through Spring 2018</li>
+                    <li class="list-group-item">Cumulative GPA: 3.5/4.0</li>
+                </ul>
+            </div>
         `;
+
 
         return content;
     }
