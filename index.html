@@ -28,12 +28,14 @@
     <!-- Pic/Bio Row -->
     <div class="row" id="bio-row">
         <!-- Pic Column -->
-        <div class="col-md-3 col-sm-12 bscol" id="pic-col">
+        <div class="col-md-4 bscol col-centered" id="pic-col">
             <img src="img/kevin.jpg" alt="picture of Kevin" class="img-thumbnail rounded-circle" id="profile-pic">
+            <h4>Kevin Walsh</h4>
+            <p><i>Software Developer & Data Scientist</i></p>
         </div>
 
         <!-- Bio Column -->
-        <div class="col-md-9 col-sm-12 bscol" id="bio-col">
+        <div class="col-md-8 col-sm-12 bscol" id="bio-col">
             <p>
                     I'm a graduate of the University of Rochester having completed a B.S. in Business and a minor in Computer Science. I have experience in object-oriented programming with languages such as Java and Swift, as well as experience in analytical scripting using languages such as Python and R. I've also done some work on data visualizations using d3.js and Tableau. My professional interests lie primarily in the fields of Software Development and Data Science, with a connected interest in tech consulting for the Federal Government.
 
@@ -54,12 +56,12 @@
                 
                 <div class="collapse multi-collapse" id="work-exp-collapse">
                     <!-- <div class="btn-group-vertical" style="align-content: center;"> -->
-                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Staff Technologist</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Technologist</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Teaching Assistant</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Summer Games Intern</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Market Research Intern</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Public Works Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Staff Technologist'))"><i>Staff Technologist</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Technologist'))"><i>Technologist</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Teaching Assistant'))"><i>Teaching Assistant</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Summer Games Intern'))"><i>Summer Games Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Market Research Intern'))"><i>Market Research Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Public Works Intern'))"><i>Public Works Intern</i></button>
                     <!-- </div> -->
                 </div>
 
