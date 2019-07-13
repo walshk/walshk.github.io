@@ -1,0 +1,50 @@
+/* General page styles */
+.container {
+    padding-top: 2px;
+    padding-bottom: 2%;
+}
+
+/* Pic-col styles */
+#profile-pic {
+    width: 18vw;
+}
+
+#pic-col > h4 {
+    padding-top: 15px;
+}
+
+.col-centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#workLogo > img {
+    width: 150px;
+    height: auto;
+}
+
+/* Module Selector styles */
+#selector-btn-group, .work-exp-sub-btn {
+    width: 100%;
+}
+
+/* In-Module styles */
+#work-exp-botrow {
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* TEMPORARY TESTING */
+.row, .bscol{
+    border: 1px solid black;
+}
