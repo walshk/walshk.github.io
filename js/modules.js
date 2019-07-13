@@ -1,9 +1,9 @@
-
 /**
  * Loads new content in the module display
  * @param {String} moduleContent - String of HTML content to display in the module display
  */
 function loadNewModule(moduleContent) {
+    console.log(`Loading new content...`)
 
     $("#module-display-col").empty();
     $(moduleContent).hide().appendTo("#module-display-col").fadeIn(500);
@@ -17,6 +17,9 @@ function loadNewModule(moduleContent) {
  * @returns {String} - Content string to be placed in the Module Display section
  */
 function createModuleContent(moduleType, workPosition=null) {
+    $(".btn-secondary").removeClass('btn-secondary');
+    $(`#${moduleType}-button`).addClass('btn-secondary');
+
 
     if (moduleType === 'education')
     {
@@ -52,16 +55,7 @@ function createModuleContent(moduleType, workPosition=null) {
         return content;
     }
 
-    else if (moduleType === 'workOverview')
-    {
-        const content = `
-        
-        `;
-
-        return content;
-    }
-
-    else if (moduleType === 'workSpecific') 
+    else if (moduleType === 'work') 
     {
         let companyName;
         let companyLocation;
@@ -175,7 +169,7 @@ function createModuleContent(moduleType, workPosition=null) {
                 </div>
             </div>
             <div class="row" id="work-exp-botrow">
-                <h6>${workPosition}</h6>
+                <strong>${workPosition}</strong>
                 <ul class="list-group list-group-flush">
                     ${expBulletString}
                 </ul>
