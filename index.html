@@ -16,63 +16,72 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
-    <!-- d3 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
-
+    
     <!-- Custom JS -->
-    <script src="js/drawTechSkills.js"></script>
-    <script src="js/drawWorkExperience.js"></script>
+    <script src="js/modules.js"></script>
 
 </head>
 <body>
     
 <div class="container">
 
-    <!-- Pic and Bio Row -->
-    <div id="pic-bio-row" class="row">
-        <div id="pic" class="col-sm-4 section">
-            <h4 style="margin-left: 14%">Kevin R. Walsh</h4>
-            <img id="profile-pic" src="img/kevin.jpg">
+    <!-- Pic/Bio Row -->
+    <div class="row" id="bio-row">
+        <!-- Pic Column -->
+        <div class="col-md-3 col-sm-12 bscol" id="pic-col">
+            <img src="img/kevin.jpg" alt="picture of Kevin" class="img-thumbnail rounded-circle" id="profile-pic">
+        </div>
+
+        <!-- Bio Column -->
+        <div class="col-md-9 col-sm-12 bscol" id="bio-col">
+            <p>
+                    I'm a graduate of the University of Rochester having completed a B.S. in Business and a minor in Computer Science. I have experience in object-oriented programming with languages such as Java and Swift, as well as experience in analytical scripting using languages such as Python and R. I've also done some work on data visualizations using d3.js and Tableau. My professional interests lie primarily in the fields of Software Development and Data Science, with a connected interest in tech consulting for the Federal Government.
+
+                    My technical coursework has provided me with not only basic knowledge of several programming tools, but also the ability to pick up new technical skills quickly and with relative ease. At the same time, my business coursework has helped me develop my skills in conveying ideas efficiently. These two channels combine to allow me to be an effective developer who can quickly transition into focusing on the business aspects of a project.
+                    
+            </p>
+        </div>
+    </div>
+
+    <!-- Modules Row -->
+    <div class="row" id="modules-row">
+        <!-- Module Selector Column -->
+        <div class="col-md-3 col-sm-12 bscol" id="selector-col">
             
-        </div>
-        <div id="bio" class="col-sm-8 section">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h4>About Me</h4>
-                    <p>
-                        I'm a graduate of the University of Rochester having completed a B.S. in Business and a minor in Computer Science. I have experience in object-oriented programming with languages such as Java and Swift, as well as experience in analytical scripting using languages such as Python and R. I've also done some work on data visualizations using d3.js and Tableau. My professional interests lie primarily in the fields of Software Development and Data Science.
-                    </p>
+            <div class="btn-group-vertical" id="selector-btn-group">
+                <button type="button" class="btn btn-secondary">Education</button>
+                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="work-exp-collapse">Work Experience</button>
+                
+                <div class="collapse multi-collapse" id="work-exp-collapse">
+                    <!-- <div class="btn-group-vertical" style="align-content: center;"> -->
+                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Staff Technologist</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Technologist</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Teaching Assistant</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Summer Games Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Market Research Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn"><i>Public Works Intern</i></button>
+                    <!-- </div> -->
                 </div>
+
+                <button type="button" class="btn btn-secondary">Skills</button>
+                <button type="button" class="btn btn-secondary">Interests</button>
             </div>
+
+        </div>
+
+        <!-- Module Display Column -->
+        <div class="col-md-9 col-sm-12 bscol" id="module-display-col">
+
         </div>
     </div>
-
-    <!-- Technical Skills Visualization Row -->
-    <div id="tech-skills-row" class="row">
-        tech-skills-row
-    </div>
-
-    <!-- Work Experience Title Row -->
-    <div id="work-exp-title-row" class="row">
-        <strong>Work Experience</strong>
-    </div>
-
-    <!-- Interactive Work Experience Row -->
-    <div id="work-exp-row" class="row">
-        <div class="panel panel-default">
-            <div id="work-exp" class="panel-body">
-                work-exp
-            </div>
-        </div>
-    </div>  
 
 </div>
 
 
 <script>
+    // On page load actions
     $(document).ready(function() {
-        drawTechSkills('web_dev');
-        drawWorkExperience(0);
+        
     });
 </script>
 
