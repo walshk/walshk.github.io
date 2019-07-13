@@ -135,10 +135,10 @@ function createModuleContent(moduleType, workPosition=null) {
 
         const content = `
             <div class="row" id="work-exp-toprow">
-                <div class="col-md-3" id="workLogo">
+                <div class="col-md-2" id="workLogo">
                     <img class="img-thumbnail" src="img/${logoName}" alt="${companyName} Logo">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-10">
                     <div class="row" id="workName">
                         <h2>${companyName}</h2>
                     </div>
