@@ -11,12 +11,17 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
-    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
     <!-- Custom JS -->
     <script src="js/modules.js"></script>
 
@@ -51,22 +56,23 @@
         <div class="col-md-4 col-sm-12 bscol" id="selector-col">
             
             <div class="btn-group-vertical" id="selector-btn-group">
-                <button type="button" class="btn btn-secondary" onclick="loadNewModule(createModuleContent('education'))">Education</button>
-                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="work-exp-collapse">Work Experience</button>
+                <button type="button" class="btn btn-info" id="education-button" onclick="loadNewModule(createModuleContent('education'))">Education</button>
+                <button class="btn btn-info" id="work-button" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="work-exp-collapse" onclick="//loadNewModule(createModuleContent('workOverview'))">Work Experience</button>
                 
                 <div class="collapse multi-collapse" id="work-exp-collapse">
                     <!-- <div class="btn-group-vertical" style="align-content: center;"> -->
-                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Staff Technologist'))"><i>Staff Technologist</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Technologist'))"><i>Technologist</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Teaching Assistant'))"><i>Teaching Assistant</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Summer Games Intern'))"><i>Summer Games Intern</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Market Research Intern'))"><i>Market Research Intern</i></button>
-                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('workSpecific', 'Public Works Intern'))"><i>Public Works Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Staff Technologist'))"><i>Staff Technologist</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Technologist'))"><i>Technologist</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Teaching Assistant'))"><i>Teaching Assistant</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Summer Games Intern'))"><i>Summer Games Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Market Research Intern'))"><i>Market Research Intern</i></button>
+                        <button type="button" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Public Works Intern'))"><i>Public Works Intern</i></button>
                     <!-- </div> -->
                 </div>
 
-                <button type="button" class="btn btn-secondary">Skills</button>
-                <button type="button" class="btn btn-secondary">Interests</button>
+                <button type="button" id="skills-button" class="btn btn-info">Skills</button>
+                <button type="button" id="interests-button" class="btn btn-info">Interests</button>
+                <button type="button" id="linkedin-button" class="btn btn-info" onclick="linkedInButton()">LinkedIn</button>
             </div>
 
         </div>
@@ -83,9 +89,24 @@
 <script>
     // On page load actions
     $(document).ready(function() {
-        
+        loadNewModule(createModuleContent('education'));
     });
+
+    // LinkedIn button handler
+    function linkedInButton() {
+        var answer = confirm("This link redirects to my LinkedIn page. Would you like to continue?");
+        if (answer) {
+            window.location.href = 'https://linkedin.com/in/walshkr';
+        }
+    } 
 </script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
 
 </body>
 </html>
