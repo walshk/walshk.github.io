@@ -26,7 +26,7 @@ function createModuleContent(moduleType, workPosition=null) {
 
         const content = `
             <div class="row" id="education-toprow">
-                <div class="col-md-4" id="educationLogo">
+                <div class="col-md-3" id="educationLogo">
                     <img class="img-thumbnail" src="img/rochester.png" alt="University of Rochester Logo">
                 </div>
                 <div class="col-md-8">
