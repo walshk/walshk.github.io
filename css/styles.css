@@ -1,7 +1,29 @@
 /* General page styles */
+
 .container {
-    padding-top: 2px;
+    padding-top: 10px;
     padding-bottom: 2%;
+}
+
+#bio-col {
+    padding-top: 5px;
+}
+
+#modules-row {
+    padding-top: 10px;
+}
+
+#work-exp-toprow, #education-toprow {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#educationLogo > img {
+    width: 200px;
+}
+
+.work-overview-thumbnail:hover {
+    opacity: 0.1;
 }
 
 /* Pic-col styles */
@@ -38,13 +60,3 @@
 
 
 
-
-
-
-
-
-
-/* TEMPORARY TESTING */
-.row, .bscol{
-    border: 1px solid black;
-}
