@@ -3,11 +3,8 @@
  * @param {String} moduleContent - String of HTML content to display in the module display
  */
 function loadNewModule(moduleContent) {
-    console.log(`Loading new content...`)
-
     $("#module-display-col").empty();
     $(moduleContent).hide().appendTo("#module-display-col").fadeIn(500);
-
 }
 
 /**
@@ -181,7 +178,76 @@ function createModuleContent(moduleType, workPosition=null) {
 
     else if (moduleType === 'skills')
     {
+        content = `
+            <div class="row" style="height: 100%;">
+            <div class="col-md-6" style="padding-right: 0;">
+                <svg width="100%" height="100%">
+                    <rect x=0 y=0 width="100%" height="100%" fill="springgreen" opacity=0.2 rx=25 />
+                    <text x=20 y=20>Proficient</text>
+                    
+                    <svg id="skill-js" x=35 y=40 width="100%">
+                        <image xlink:href="img/javascript.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-d3" x=130 y=40 width="100%">
+                        <image xlink:href="img/d3.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-jquery" x=215 y=40 width="100%">
+                        <image xlink:href="img/jquery.png" width=80 height=60>
+                    </svg>
 
+                    <svg id="skill-python" x=35 y=110 width="100%">
+                        <image xlink:href="img/python.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-numpy" x=130 y=110 width="100%">
+                        <image xlink:href="img/numpy.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-pandas" x=215 y=110 width="100%">
+                        <image xlink:href="img/pandas.png" width=80 height=60>
+                    </svg>
+
+                    <svg id="skill-sklearn" x=35 y=180 width="100%">
+                        <image xlink:href="img/sklearn.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-sql" x=130 y=180 width="100%">
+                        <image xlink:href="img/sql.svg" width=80 height=60>
+                    </svg>
+                    <svg id="skill-bootstrap" x=225 y=180 width="100%">
+                        <image xlink:href="img/bootstrap.svg" width=60 height=60>
+                    </svg>
+
+                </svg>
+            </div>
+            <div class="col-md-6" style="padding-left: 0; padding-right: 0;">
+                <svg width="100%" height="100%">
+                    <rect x=0 y=0 width="100%" height="100%" fill="gold" opacity=0.2 rx=25 />
+                    <text x=20 y=20>Some Experience</text>
+
+                    <svg id="skill-java" x=35 y=40 width="100%">
+                        <image xlink:href="img/java.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-csharp" x=130 y=40 width="100%">
+                        <image xlink:href="img/csharp.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-mlnet" x=215 y=40 width="100%">
+                        <image xlink:href="img/mlnet.png" width=80 height=60>
+                    </svg>
+
+                    <svg id="skill-opencv" x=80 y=110 width="100%">
+                        <image xlink:href="img/opencv.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-stata" x=180 y=110 width="100%">
+                        <image xlink:href="img/stata.png" width=80 height=60>
+                    </svg>
+
+                    <svg id="skill-aws" x=130 y=180 width="100%">
+                        <image xlink:href="img/aws.png" width=100 height=60>
+                    </svg>
+
+
+                </svg>
+            </div>
+            </div>
+        `;
 
         return content;
     }
@@ -193,4 +259,44 @@ function createModuleContent(moduleType, workPosition=null) {
     }
 
 
+}
+
+/**
+ * Activate and populate hover tooltips for all svg images in Skills module
+ */
+function activateSkillTooltips() {
+    const skillExamples = {
+        'js': "I've used JavaScript on several projects, most frequently for handling interactions on data visualization dashboards.",
+        'd3': "I've used D3 to build a number of different data visualizations in order to display either client or internal data in an effective way.",
+        'jquery': "I've used jQuery in the same way I've used JavaScript, since jQuery just makes operating with JS easier.",
+        'python': "I've used Python mostly for projects that required data analysis or machine learning, but I've also used it to integrate data communications between a Microsoft HoloLens and an NVIDIA Jetson Nano.",
+        'numpy': "I've used the NumPy library in Python when I've needed to manipulate data, for example to transform data when creating input vectors for machine learning models.",
+        'pandas': "I've used the Pandas library in Python to easily format data for training and testing machine learning models.",
+        'sklearn': "I've used the Scikit-Learn library in Python to access its treasure trove of implemented machine learning methods, from supervised to unsupervised methods.",
+        'sql': "I've used SQL for querying both standalone databases as well as databases connected as a backend for a website (using PHP for the backend communications).",
+        'bootstrap': "I've used Bootstrap for both web page styles as well as functionality - the grid system is the easiest way for me to go from a drawing on a whiteboard to a wireframe on a web page.",
+        'java': "I mostly used Java in school, as it was the language taught in my intro CS and Data Structures & Algorithms classes.",
+        'csharp': "I used C# for one project where we needed to implement machine learning methods into an established software stack reliant on Microsoft .NET.",
+        'mlnet': "I used the ML.NET framework to implement some basic machine learning methods into an established software stack reliant on Microsoft .NET (using C#).",
+        'opencv': "I've used the OpenCV library in Python when working on a project that involved building machine learning models to detect certain gestures in live video feeds.",
+        'stata': "I used Stata in a couple of different econometrics classes - I found it very powerful for econometric analysis, but outside of that I prefer to do all data analysis in Python.",
+        'aws': "I used API Gateway and Lambda on a project to be able to perform the computation for a machine learning task on the cloud to allow for the task's scalability."
+    };
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    for (var skill in skillExamples) {
+        if (skillExamples.hasOwnProperty(skill)) {
+            const identifier = `skill-${skill}`;
+
+            $(`svg #${identifier}`).tooltip({
+                title: skillExamples[skill],
+                html: true,
+                placement: 'top',
+                container: 'body'
+              });
+        }
+    }
 }
