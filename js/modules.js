@@ -178,7 +178,7 @@ function createModuleContent(moduleType, workPosition=null) {
 
     else if (moduleType === 'skills')
     {
-        content = `
+        const content = `
             <div class="row" style="height: 100%;">
             <div class="col-md-6" style="padding-right: 0;">
                 <svg width="100%" height="100%">
@@ -252,8 +252,18 @@ function createModuleContent(moduleType, workPosition=null) {
         return content;
     }
     
-    else if (moduleType === 'interests')
+    else if (moduleType === 'contact')
     {
+
+        const content = `
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Contact Me</h4>
+                    <p>The easiest way to get in touch with me is via email at <a href="mailto:kevinwalsh322@gmail.com">kevinwalsh322@gmail.com</a>.</p>
+                    <p>You can also connect with me on <a href="https://linkedin.com/in/walshkr">LinkedIn</a>!</p>
+                </div>
+            </div>
+        `;
 
         return content;
     }
