@@ -1,4 +1,7 @@
 /* General page styles */
+body, .list-group-item {
+    background-color: #F5F5F5 !important;
+}
 
 .container {
     padding-top: 10px;
@@ -11,6 +14,7 @@
 
 #modules-row {
     padding-top: 10px;
+    border-top: 1px solid black;
 }
 
 #work-exp-toprow, #education-toprow {
