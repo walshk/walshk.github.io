@@ -59,6 +59,18 @@ function createModuleContent(moduleType, workPosition=null) {
         let timePeriod;
         let experienceBullets;
 
+        let tmp = workPosition.toLowerCase().split(' ');
+        tmp.push('btn');
+        identifier = tmp.join('-');
+
+        $('.btn-blue-grey').addClass('btn-light');
+        $('.btn-blue-grey').removeClass('btn-blue-grey');
+        $(`#${identifier}`).addClass('btn-blue-grey');
+        $(`#${identifier}`).removeClass('btn-light');
+
+        console.log(identifier);
+        console.log($(`#${identifier}`));
+
         switch(workPosition) {
             case 'Staff Technologist':
                 companyName = 'Booz Allen Hamilton';
@@ -181,7 +193,7 @@ function createModuleContent(moduleType, workPosition=null) {
         const content = `
             <div class="row" style="height: 100%;">
             <div class="col-md-6" style="padding-right: 0;">
-                <svg width="100%" height="100%">
+                <svg width="100%" height=270>
                     <rect x=0 y=0 width="100%" height="100%" fill="springgreen" opacity=0.2 rx=25 />
                     <text x=20 y=20>Proficient</text>
                     
@@ -218,7 +230,7 @@ function createModuleContent(moduleType, workPosition=null) {
                 </svg>
             </div>
             <div class="col-md-6" style="padding-left: 0; padding-right: 0;">
-                <svg width="100%" height="100%">
+                <svg width="100%" height=270>
                     <rect x=0 y=0 width="100%" height="100%" fill="gold" opacity=0.2 rx=25 />
                     <text x=20 y=20>Some Experience</text>
 
