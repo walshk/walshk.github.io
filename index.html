@@ -1,339 +1,109 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Walsh</title>
-    <link rel="stylesheet" href="css/foundation.min.css">
+    <title>Kevin R. Walsh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRaleway" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="js/modules.js"></script>
 
 </head>
 <body>
-
-	<div id="loader-wrapper">
-	    <div id="loader"></div>
-	 
-	    <div class="loader-section section-left"></div>
-	    <div class="loader-section section-right"></div>
-	 
-	</div>
     
-    <div class="content">
-		<div class="hero-full-screen">
-
-			<div class="top-content-section">
-				<div class="top-bar nav-show">
-					<div class="top-bar-right" id="tbData">
-						<ul class="menu">
-					          <li><a href="#about">About</a></li>
-					          <li><a href="#work">Work</a></li>
-					          <li><a href="#skills">Skills</a></li>
-					          <li><a href="#courses">Courses</a></li>
-					          <li><a href="#sources">Sources</a></li>
-				        </ul>
-			    	</div>
-				</div>
-			</div>
-
-			<div class="middle-content-section">
-				<h1 style="fill: #faebd7; padding-top: 200px;">Kevin R. Walsh</h1>
-				<!-- Place this tag where you want the button to render -->
-				<a href="https://github.com/walshk"><img src="img/github.png" alt="github logo"></a>
-				<a href="https://linkedin.com/in/walshkr"><img src="img/linkedin.png" alt="linkedin logo"></a>
-
-			</div>
-
-		  <div class="bottom-content-section" data-magellan data-threshold="0">
-		    <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
-		  </div>
-
-		</div>
-
-		<div id="main-content-section" data-magellan-target="main-content-section">
-			
-			<div class="container1" id="about">
-
-				<!-- About Me section -->
-				<div class="grid-x about-me">
-					<div class="cell small-9 large-8">
-						<h2>About Me</h2>
-
-						<p>I'm a graduate of the University of Rochester having completed a B.S. in Business and a minor in Computer Science. I have experience in object-oriented programming with languages such as Java and Swift, as well as experience in analytical scripting using languages such as Python and R. I've also done some work on data visualizations using d3.js and Tableau. My professional interests lie primarily in the fields of Software Development and Data Science, with a connected interest in tech consulting for the Federal Government.</p>
-
-						<p>My technical coursework has provided me with not only basic knowledge of several programming tools, but also the ability to pick up new technical skills quickly and with relative ease. At the same time, my business coursework has helped me develop my skills in conveying ideas efficiently. These two channels combine to allow me to be an effective developer who can quickly transition into focusing on the business aspects of a project.</p>
-
-						<p>My complete resume can be found <a href="files/kwresume.pdf">here</a>. Additionally, you can check out a small project I'm working on using D3.js <a href="https://walshk.github.io/repoData/">here</a>. It uses the Github API to scrape information about a user's repositories and displays it in a user-friendly minimalist manner.</p>
-
-
-					</div>
-
-					<div class="cell small-3 large-3">
-						<img class="kevpic visible-for-large-only" src="img/kevin1.jpg" alt="picture of Kevin">
-					</div>
-
-				</div>
-
-			</div>
-		
-			<!-- Work Experience Section -->
-			<div class="container2" id="work">
-				<div class="work-experience">
-					<div class="grid-x">
-						<h2>Work Experience</h2>
-					</div>
-				</div>
-
-				<!-- Timeline -->
-				<div class="timeline">
-
-					<div class="timeline-item">
-						<div class="timeline-icon">
-							<img src="img/darien.png" alt="town of darien logo" width="80" height="80">
-						</div>
-						<div class="timeline-content">
-							<header class="timeline-content-date">Summer 2015</header>
-							<header><strong>Town of Darien Dept. of Public Works</strong></header>
-							<header><i>Front Desk Intern</i></header>
-							<p>My first summer spent interning for the Town of Darien, CT's Department of Public Works. I was placed at the front desk, and given the responsibility of distributing access passes for the town Recycling Center to hundreds of residents every day.</p>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-icon">
-							<img src="img/pollinate.png" alt="pollinate publicity logo" width="100" height="140">
-						</div>
-						<div class="timeline-content right">
-							<header class="timeline-content-date">Spring 2016</header>
-							<header><strong>Pollinate Publicity (start-up at U of R)</strong></header>
-							<header><i>Market Research &amp; Data Analysis Intern</i></header>
-							<p>I was brought on as a Market Research &amp; Data Analysis Intern for Pollinate Publicity (a start-up at the University of Rochester) during the spring of my Sophomore year. My initial responsibility was to conduct interviews with students to research how they react to advertisements on campus. Once some data was gathered, I moved on to building projection tables in Excel to project revenues and expenses for a break-even analysis.</p>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-icon">
-							<img src="img/darien.png" alt="town of darien logo" width="80" height="80">
-						</div>
-						<div class="timeline-content">
-							<header class="timeline-content-date">Summer 2016</header>
-							<header><strong>Town of Darien Dept. of Public Works</strong></header>
-							<header><i>Front Desk Intern</i></header>
-							<p>I went back to the Department of Public Works for the summer after my sophomore year with a stronger creative drive. This time around, in addition to selling access passes, I aided in the development of a ten-year capital expenditures budget, found and analyzed fifteen years of sales data to learn about consumer habits, and authored a report on changes in consumer purchasing decisions after a past change in the department's pricing scheme.</p>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-icon">
-							<img src="img/uofr.png" alt="university of rochester logo" width="80" height="80">
-						</div>
-						<div class="timeline-content right">
-							<header class="timeline-content-date">Fall 2016</header>
-							<header><strong>University of Rochester</strong></header>
-							<header><i>Workshop Leader, Intro to Programming</i></header>
-							<header><i>Tutor, Financial Accounting</i></header>
-							<p>Back at the University of Rochester, I was hired as both a Workshop Leader for <i>CSC161 - Intro to Programming</i> and a Tutor for <i>ACC201 - Financial Accounting</i>. I stopped tutoring accounting after one semester due to low demand, but I've continued on as a Workshop Leader through the Fall 2017 semester (3 semesters). As a Workshop Leader, I'm responsible for conducting weekly 75-minute-long workshops in which I guide a class of 12 students through more advanced problems in the Python programming language.</p>
-						</div>
-					</div>
-
-					<div class="timeline-item">
-						<div class="timeline-icon">
-							<img src="https://pbs.twimg.com/profile_images/847041538282577920/FUFsTB3e_400x400.jpg" alt="booz allen logo" width="100" height="100">
-						</div>
-						<div class="timeline-content">
-							<header class="timeline-content-date">Summer 2017</header>
-							<header><strong>Booz Allen Hamilton</strong></header>
-							<header><i>Summer Games Intern</i></header>
-							<header><i>Soldier Performance &amp; Readiness Science Team</i></header>
-							<p>As a Summer Games Intern for Booz Allen Hamilton and a member of the Soldier Performance and Readiness Science (SPARS) Team, I took charge of my team’s data-driven efforts to explore the relationship between physical stress and a soldier’s cognitive ability. This involved drawing up possible data platform architectures and effectively communicating to the rest of the team how these technologies would operate. Additionally, I wrote several scripts in Python to handle data ingestion, processing, and analytics, while using d3.js to build interactive data visualizations (having no prior knowledge of D3 or JavaScript, I was able to pick up D3 within about a week and a half). I also put together a concept for a cloud-based data architecture using the firm's Open Data Platform, but had to leave it as a future step due to time constraints. After my experience during this summer, I was extended an offer to return to the firm and will be returning to Booz Allen after graduation as a Digital Solutions Developer.</p>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="container3" id="skills">			
-
-				<div class="grid-x">
-					<div class="cell small-11">
-						<h2>Technical Skills</h2>
-
-						<table>
-							<tr>
-								<th id="tabletopleft">Object-Oriented Programming &amp; Scripting</th>
-								<td id="tabletopright">Python, Java</td>
-							</tr>
-							<tr>
-								<th>Web Design &amp; Development</th>
-								<td>HTML, CSS, JavaScript, PHP, D3, Foundation</td>
-							</tr>
-							<tr>
-								<th>Data Management</th>
-								<td>SQL, MS Access, MS Excel</td>
-							</tr>
-							<tr>
-								<th>Mobile App Development</th>
-								<td>Swift, MVC Design Pattern</td>
-							</tr>
-							<tr>
-								<th id="tablebotleft">Regression Analysis</th>
-								<td id="tablebotright">Stata</td>
-							</tr>
-						</table>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="container4 courses" id="courses">
-
-				<h2>Relevant Courses</h2>
-
-				<div class="grid-x">
-
-					<div class="cell small-11 large-5">
-
-						<table>
-							<tr>
-								<th id="tabletopleft">Business</th>
-								<th id="tabletopright"></th>
-							</tr>
-							<tr>
-								<td>GBA 220W</td>
-								<td>Business Information Systems &amp; Analytics</td>
-							</tr>
-							<tr>
-								<td>CIS 242</td>
-								<td>Predictive Analytics for Business</td>
-							</tr>
-							<tr>
-								<td>STT 212</td>
-								<td>Applied Statistics</td>
-							</tr>
-							<tr>
-								<td>MKT 212</td>
-								<td>Marketing Research &amp; Analytics</td>
-							</tr>
-							<tr>
-								<td>ECO 231W</td>
-								<td>Econometrics</td>
-							</tr>
-							<tr>
-								<td id="tablebotleft">ECO 233W</td>
-								<td id="tablebotright">Applied Econometrics</td>
-							</tr>
-						</table>
-
-						
-
-					</div>
-
-					<div class="cell large-1"></div>
-
-					<div class="cell small-11 large-5">
-
-						<table>
-							<tr>
-								<th id="tabletopleft">Computer Science</th>
-								<th id="tabletopright"></th>
-							</tr>
-							<tr>
-								<td>CSC 161</td>
-								<td>Intro to Programming</td>
-							</tr>
-							<tr>
-								<td>CSC 170</td>
-								<td>Web Design &amp; Development</td>
-							</tr>
-							<tr>
-								<td>CSC 171</td>
-								<td>Intro to Computer Science</td>
-							</tr>
-							<tr>
-								<td>CSC 172</td>
-								<td>Data Structures &amp; Algorithms</td>
-							</tr>
-							<tr>
-								<td>CSC 174</td>
-								<td>Advanced Front-End Web Development</td>
-							</tr>
-							<tr>
-								<td id="tablebotleft">CSC 214</td>
-								<td id="tablebotright">Mobile App Development (iOS)</td>
-							</tr>
-						</table>
-
-						
-					</div>
-
-					
-
-				</div>
-
-
-			</div>
-
-
-
-		</div>
-
-	</div>
-
-	<div class="container5 footer" id="sources">
-
-		<h2>Sources</h2>
-
-		<header>ZURB Foundation Building Blocks:</header>
-		<ul>
-			<li><a href="https://foundation.zurb.com/building-blocks/blocks/hero-full-screen.html">Full Screen Hero</a></li>
-			<li><a href="https://foundation.zurb.com/building-blocks/blocks/responsive-timeline.html">Responsive Vertical Timeline</a></li>
-		</ul>
-
-		<header>Other items used:</header>
-
-		<ul>
-			<li>GitHub &amp; LinkedIn icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC BY 3.0</a></li>
-			<li>Splash image of waterfall found <a href="https://www.flickr.com/photos/lancerudge/">here.</a></li>
-		</ul>
-
-		<footer>&copy; Kevin Walsh 2017</footer>
-
-	</div>
-
-
-
-
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="js/foundation.min.js"></script>
-
-
-	<!-- the following script was found at https://joomla.stackexchange.com/questions/8896/smooth-scroll-to-anchor-not-working -->
-	<script>
-		jQuery(document).ready(function($){   
-			 $('a[href^="#"]').on('click', function(e) {
-
-			var target = $($(this).attr('href'));
-
-			if(target.length) {
-			    e.preventDefault();
-			    $('html, body').animate({
-			        scrollTop: target.offset().top
-			    }, 1000);
-			}   
-			});  
-		});
-	</script>
-
-	<script src="js/navHider.js"></script>
-
-	<script>
-	  $(document).foundation();
-	</script>
-
-  </body>
+<div class="container">
+
+    <!-- Pic/Bio Row -->
+    <div class="row" id="bio-row">
+        <!-- Pic Column -->
+        <div class="col-md-4 bscol col-centered" id="pic-col">
+            <img src="img/kevin.jpg" alt="picture of Kevin" class="img-thumbnail rounded-circle" id="profile-pic">
+            <h4>Kevin Walsh</h4>
+            <p><i>Software Developer & Data Scientist</i></p>
+        </div>
+
+        <!-- Bio Column -->
+        <div class="col-md-8 col-sm-12 bscol" id="bio-col">
+            <p>
+                    Hi, I'm Kevin! I'm currently a mix between a software developer and a data scientist - it changes depending on the projects I'm working on - in the Washington, DC Metro Area. While I'm working primarily as a programmer in a highly technical role, my undergraduate degree is actually in Business. While I was completing a Business major, I was also progressing through a minor in Computer Science, which hooked me into how fascinating the process of solving problems via programming is! While I finished my degree in Business, I knew I wanted to do more technical work, and I'm fortunate enough to have found myself in that role right after college! While the skills that I rely on day-to-day are mostly technical, I believe that my Business education helps me maintain a holistic and client-focused view of any technical projects that I'm working on. I find it easier to not get lost in the technical weeds and keep the project's utility for the client in the very front of my mind. Anyway, that's a bit about me. In the modules available via the buttons below on the left, you can flip through a virtual version of my resume for anything else you'd like to know!     
+            </p>
+        </div>
+    </div>
+
+    <!-- Modules Row -->
+    <div class="row" id="modules-row">
+        <!-- Module Selector Column -->
+        <div class="col-md-4 col-sm-12 bscol" id="selector-col">
+            
+            <div class="btn-group-vertical" id="selector-btn-group">
+                <button type="button" class="btn btn-info" id="education-button" onclick="loadNewModule(createModuleContent('education'))">Education</button>
+                <button class="btn btn-info" id="work-button" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="work-exp-collapse" onclick="//loadNewModule(createModuleContent('workOverview'))">Work Experience</button>
+                
+                <div class="collapse multi-collapse" id="work-exp-collapse">
+                    <!-- <div class="btn-group-vertical" style="align-content: center;"> -->
+                        <button type="button" id="staff-technologist-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Staff Technologist'))"><i>Staff Technologist</i></button>
+                        <button type="button" id="technologist-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Technologist'))"><i>Technologist</i></button>
+                        <button type="button" id="teaching-assistant-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Teaching Assistant'))"><i>Teaching Assistant</i></button>
+                        <button type="button" id="summer-games-intern-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Summer Games Intern'))"><i>Summer Games Intern</i></button>
+                        <button type="button" id="market-research-intern-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Market Research Intern'))"><i>Market Research Intern</i></button>
+                        <button type="button" id="public-works-intern-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Public Works Intern'))"><i>Public Works Intern</i></button>
+                    <!-- </div> -->
+                </div>
+
+                <button type="button" id="skills-button" class="btn btn-info" onclick="loadNewModule(createModuleContent('skills')); activateSkillTooltips();">Skills</button>
+                <button type="button" id="contact-button" class="btn btn-info" onclick="loadNewModule(createModuleContent('contact'))">Contact</button>
+                <button type="button" id="linkedin-button" class="btn btn-info" onclick="linkedInButton()">LinkedIn</button>
+            </div>
+
+        </div>
+
+        <!-- Module Display Column -->
+        <div class="col-md-8 col-sm-12 bscol" id="module-display-col">
+
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    // On page load actions
+    $(document).ready(function() {
+        loadNewModule(createModuleContent('education'));
+    });
+
+    // LinkedIn button handler
+    function linkedInButton() {
+        var answer = confirm("This link redirects to my LinkedIn page. Would you like to continue?");
+        if (answer) {
+            window.location.href = 'https://linkedin.com/in/walshkr';
+        }
+    } 
+</script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
+
+</body>
 </html>
-
-
