@@ -81,7 +81,9 @@ function createModuleContent(moduleType, workPosition=null) {
 
                 experienceBullets = [
                     'Supported several technical projects for US Government clients and internal strategic investments',
-                    'Developed and deployed machine learning models to detect and classify gestures in live video feeds'
+                    'Developed and deployed machine learning models to detect and classify gestures in live video feeds',
+                    'Containerized a data visualization dashboard product using Docker to reduce local set-up times and avoid issues stemming from running the product on different machines',
+                    'Conducted a distributed map/reduce effort using Python multiprocessing to extract statistics from large amounts of American Community Survey public-use microdata'
                 ];
 
                 break;
