@@ -237,25 +237,34 @@ function createModuleContent(moduleType, workPosition=null) {
                     <rect x=0 y=0 width="100%" height="100%" fill="gold" opacity=0.2 rx=25 />
                     <text x=20 y=20>Some Experience</text>
 
-                    <svg id="skill-java" x=35 y=40 width="100%">
+                    <svg id="skill-angular" x=35 y=40 width="100%">
+                        <image xlink:href="img/angular.png" width=80 height=60>
+                    </svg>
+
+                    <svg id="skill-docker" x=130 y=40 width="100%">
+                        <image xlink:href="img/docker.png" width=80 height=60>
+                    </svg>
+
+                    <svg id="skill-java" x=215 y=40 width="100%">
                         <image xlink:href="img/java.png" width=80 height=60>
                     </svg>
-                    <svg id="skill-csharp" x=130 y=40 width="100%">
+
+                    <svg id="skill-opencv" x=35 y=110 width="100%">
+                        <image xlink:href="img/opencv.png" width=80 height=60>
+                    </svg>
+                    <svg id="skill-csharp" x=130 y=110 width="100%">
                         <image xlink:href="img/csharp.png" width=80 height=60>
                     </svg>
-                    <svg id="skill-mlnet" x=215 y=40 width="100%">
+                    <svg id="skill-mlnet" x=215 y=110 width="100%">
                         <image xlink:href="img/mlnet.png" width=80 height=60>
                     </svg>
 
-                    <svg id="skill-opencv" x=80 y=110 width="100%">
-                        <image xlink:href="img/opencv.png" width=80 height=60>
-                    </svg>
-                    <svg id="skill-stata" x=180 y=110 width="100%">
-                        <image xlink:href="img/stata.png" width=80 height=60>
+                    <svg id="skill-aws" x=75 y=180 width="100%">
+                        <image xlink:href="img/aws.png" width=80 height=60>
                     </svg>
 
-                    <svg id="skill-aws" x=130 y=180 width="100%">
-                        <image xlink:href="img/aws.png" width=100 height=60>
+                    <svg id="skill-stata" x=165 y=180 width="100%">
+                        <image xlink:href="img/stata.png" width=100 height=60>
                     </svg>
 
 
@@ -305,7 +314,9 @@ function activateSkillTooltips() {
         'mlnet': "I used the ML.NET framework to implement some basic machine learning methods into an established software stack reliant on Microsoft .NET (using C#).",
         'opencv': "I've used the OpenCV library in Python when working on a project that involved building machine learning models to detect certain gestures in live video feeds.",
         'stata': "I used Stata in a couple of different econometrics classes - I found it very powerful for econometric analysis, but outside of that I prefer to do all data analysis in Python.",
-        'aws': "I used API Gateway and Lambda on a project to be able to perform the computation for a machine learning task on the cloud to allow for the task's scalability."
+        'aws': "I used API Gateway and Lambda on a project to be able to perform the computation for a machine learning task on the cloud to allow for the task's scalability.",
+        'angular': "I've used Angular to develop new functionality for an existing web app, building several new components and services following the Model-View-Controller design pattern.",
+        'docker': "I've used Docker on a few occasions to repackage existing applications so they can deploy to new machines while avoiding any software dependency issues."
     };
 
     $(function () {
