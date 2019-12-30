@@ -307,7 +307,7 @@ function activateSkillTooltips() {
         'numpy': "I've used the NumPy library in Python when I've needed to manipulate data, for example to transform data when creating input vectors for machine learning models.",
         'pandas': "I've used the Pandas library in Python to easily format data for training and testing machine learning models.",
         'sklearn': "I've used the Scikit-Learn library in Python to access its treasure trove of implemented machine learning methods, from supervised to unsupervised methods.",
-        'sql': "I've used SQL for quaerying both standalone databases as well as databases connected as a backend for a website (using PHP for the backend communications).",
+        'sql': "I've used SQL for querying both standalone databases as well as databases connected as a backend for a website (using PHP for the backend communications).",
         'bootstrap': "I've used Bootstrap for both web page styles as well as functionality - the grid system is the easiest way for me to go from a drawing on a whiteboard to a wireframe on a web page.",
         'java': "I mostly used Java in school, as it was the language taught in my intro CS and Data Structures & Algorithms classes.",
         'csharp': "I used C# for one project where we needed to implement machine learning methods into an established software stack reliant on Microsoft .NET.",
