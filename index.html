@@ -1,109 +1,238 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>Kevin R. Walsh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <head>
+        <meta charset="utf-8" />
+        <title>Kevin R. Walsh</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous"
+        />
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
 
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        />
+        <!-- Bootstrap core CSS -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Material Design Bootstrap -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/css/mdb.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- Custom JS -->
-    <script src="js/modules.js"></script>
+        <!-- JQuery -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        ></script>
 
-</head>
-<body>
-    
-<div class="container">
-
-    <!-- Pic/Bio Row -->
-    <div class="row" id="bio-row">
-        <!-- Pic Column -->
-        <div class="col-md-4 bscol col-centered" id="pic-col">
-            <img src="img/kevin.jpg" alt="picture of Kevin" class="img-thumbnail rounded-circle" id="profile-pic">
-            <h4>Kevin Walsh</h4>
-            <p><i>Software Developer & Data Scientist</i></p>
-        </div>
-
-        <!-- Bio Column -->
-        <div class="col-md-8 col-sm-12 bscol" id="bio-col">
-            <p>
-                    Hi, I'm Kevin! I'm currently a mix between a software developer and a data scientist - it changes depending on the projects I'm working on - in the Washington, DC Metro Area. While I'm working primarily as a programmer in a highly technical role, my undergraduate degree is actually in Business. While I was completing a Business major, I was also progressing through a minor in Computer Science, which hooked me into how fascinating the process of solving problems via programming is! While I finished my degree in Business, I knew I wanted to do more technical work, and I'm fortunate enough to have found myself in that role right after college! While the skills that I rely on day-to-day are mostly technical, I believe that my Business education helps me maintain a holistic and client-focused view of any technical projects that I'm working on. I find it easier to not get lost in the technical weeds and keep the project's utility for the client in the very front of my mind. Anyway, that's a bit about me. In the modules available via the buttons below on the left, you can flip through a virtual version of my resume for anything else you'd like to know!     
-            </p>
-        </div>
-    </div>
-
-    <!-- Modules Row -->
-    <div class="row" id="modules-row">
-        <!-- Module Selector Column -->
-        <div class="col-md-4 col-sm-12 bscol" id="selector-col">
-            
-            <div class="btn-group-vertical" id="selector-btn-group">
-                <button type="button" class="btn btn-info" id="education-button" onclick="loadNewModule(createModuleContent('education'))">Education</button>
-                <button class="btn btn-info" id="work-button" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="work-exp-collapse" onclick="//loadNewModule(createModuleContent('workOverview'))">Work Experience</button>
-                
-                <div class="collapse multi-collapse" id="work-exp-collapse">
-                    <!-- <div class="btn-group-vertical" style="align-content: center;"> -->
-                        <button type="button" id="staff-technologist-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Staff Technologist'))"><i>Staff Technologist</i></button>
-                        <button type="button" id="technologist-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Technologist'))"><i>Technologist</i></button>
-                        <button type="button" id="teaching-assistant-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Teaching Assistant'))"><i>Teaching Assistant</i></button>
-                        <button type="button" id="summer-games-intern-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Summer Games Intern'))"><i>Summer Games Intern</i></button>
-                        <button type="button" id="market-research-intern-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Market Research Intern'))"><i>Market Research Intern</i></button>
-                        <button type="button" id="public-works-intern-btn" class="btn btn-light work-exp-sub-btn" onclick="loadNewModule(createModuleContent('work', 'Public Works Intern'))"><i>Public Works Intern</i></button>
-                    <!-- </div> -->
+        <!-- Custom JS -->
+        <script src="js/modules.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Pic/Bio Row -->
+            <div class="row" id="bio-row">
+                <!-- Pic Column -->
+                <div class="col-md-3 bscol col-centered" id="pic-col">
+                    <img
+                        src="img/kevin.jpg"
+                        alt="picture of Kevin"
+                        class="img-thumbnail rounded-circle"
+                        id="profile-pic"
+                    />
+                    <h4>Kevin Walsh</h4>
+                    <p><i>Software Engineer</i></p>
                 </div>
 
-                <button type="button" id="skills-button" class="btn btn-info" onclick="loadNewModule(createModuleContent('skills')); activateSkillTooltips();">Skills</button>
-                <button type="button" id="contact-button" class="btn btn-info" onclick="loadNewModule(createModuleContent('contact'))">Contact</button>
-                <button type="button" id="linkedin-button" class="btn btn-info" onclick="linkedInButton()">LinkedIn</button>
+                <!-- Bio Column -->
+                <div class="col-md-8 col-sm-12 bscol" id="bio-col">
+                    <p class="bio-paragraph">
+                        Welcome to my online resume! My name is Kevin and I'm a
+                        full-stack software engineer with most of my experience
+                        in the web development stack using frameworks such as
+                        Vuejs, Nodejs, and Redis. Outside of web development,
+                        I've got experience in object-oriented programming using
+                        Python to add new endpoints to an existing REST API as
+                        well as enhancing Python-based command-line utilities.
+                    </p>
+                    <p class="bio-paragraph">
+                        In my development endeavors, I've built up experience in
+                        build and deploy tools as well. I'm very familiar with
+                        using Docker to both build and deploy images, and also
+                        have experience interacting with deployed pods in a
+                        Kubernetes cluster for debugging purposes (with limited
+                        experience in configuring Helm charts for those
+                        deployments).
+                    </p>
+                    <p>
+                        To sum it up, I like learning new skills on the job to
+                        add to my toolbox and continuously improve the quality
+                        of the projects that I work on.
+                    </p>
+                </div>
             </div>
 
+            <!-- Modules Row -->
+            <div class="row" id="modules-row">
+                <!-- Module Selector Column -->
+                <div class="col-md-4 col-sm-12 bscol" id="selector-col">
+                    <div class="btn-group-vertical" id="selector-btn-group">
+                        <button
+                            type="button"
+                            class="btn btn-info"
+                            id="education-button"
+                            onclick="loadNewModule(createModuleContent('education'))"
+                        >
+                            Education
+                        </button>
+                        <button
+                            class="btn btn-info"
+                            id="work-button"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target=".multi-collapse"
+                            aria-expanded="false"
+                            aria-controls="work-exp-collapse"
+                            onclick="//loadNewModule(createModuleContent('workOverview'))"
+                        >
+                            Work Experience
+                        </button>
+
+                        <div
+                            class="collapse multi-collapse"
+                            id="work-exp-collapse"
+                        >
+                            <!-- <div class="btn-group-vertical" style="align-content: center;"> -->
+                            <button
+                                type="button"
+                                id="staff-technologist-btn"
+                                class="btn btn-light work-exp-sub-btn"
+                                onclick="loadNewModule(createModuleContent('work', 'Staff Technologist'))"
+                            >
+                                <i>Staff Technologist</i>
+                            </button>
+                            <button
+                                type="button"
+                                id="technologist-btn"
+                                class="btn btn-light work-exp-sub-btn"
+                                onclick="loadNewModule(createModuleContent('work', 'Technologist'))"
+                            >
+                                <i>Technologist</i>
+                            </button>
+                            <button
+                                type="button"
+                                id="teaching-assistant-btn"
+                                class="btn btn-light work-exp-sub-btn"
+                                onclick="loadNewModule(createModuleContent('work', 'Teaching Assistant'))"
+                            >
+                                <i>Teaching Assistant</i>
+                            </button>
+                            <button
+                                type="button"
+                                id="summer-games-intern-btn"
+                                class="btn btn-light work-exp-sub-btn"
+                                onclick="loadNewModule(createModuleContent('work', 'Summer Games Intern'))"
+                            >
+                                <i>Summer Games Intern</i>
+                            </button>
+                            <button
+                                type="button"
+                                id="market-research-intern-btn"
+                                class="btn btn-light work-exp-sub-btn"
+                                onclick="loadNewModule(createModuleContent('work', 'Market Research Intern'))"
+                            >
+                                <i>Market Research Intern</i>
+                            </button>
+                            <button
+                                type="button"
+                                id="public-works-intern-btn"
+                                class="btn btn-light work-exp-sub-btn"
+                                onclick="loadNewModule(createModuleContent('work', 'Public Works Intern'))"
+                            >
+                                <i>Public Works Intern</i>
+                            </button>
+                            <!-- </div> -->
+                        </div>
+
+                        <!-- <button
+                            type="button"
+                            id="skills-button"
+                            class="btn btn-info"
+                            onclick="loadNewModule(createModuleContent('skills')); activateSkillTooltips();"
+                        >
+                            Skills
+                        </button> -->
+                        <button
+                            type="button"
+                            id="contact-button"
+                            class="btn btn-info"
+                            onclick="loadNewModule(createModuleContent('contact'))"
+                        >
+                            Contact
+                        </button>
+                        <button
+                            type="button"
+                            id="linkedin-button"
+                            class="btn btn-info"
+                            onclick="linkedInButton()"
+                        >
+                            LinkedIn
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Module Display Column -->
+                <div
+                    class="col-md-8 col-sm-12 bscol"
+                    id="module-display-col"
+                ></div>
+            </div>
         </div>
 
-        <!-- Module Display Column -->
-        <div class="col-md-8 col-sm-12 bscol" id="module-display-col">
+        <script>
+            // On page load actions
+            $(document).ready(function () {
+                loadNewModule(createModuleContent("education"));
+            });
 
-        </div>
-    </div>
+            // LinkedIn button handler
+            function linkedInButton() {
+                var answer = confirm(
+                    "This link redirects to my LinkedIn page. Would you like to continue?"
+                );
+                if (answer) {
+                    window.location.href = "https://linkedin.com/in/walshkr";
+                }
+            }
+        </script>
 
-</div>
-
-
-<script>
-    // On page load actions
-    $(document).ready(function() {
-        loadNewModule(createModuleContent('education'));
-    });
-
-    // LinkedIn button handler
-    function linkedInButton() {
-        var answer = confirm("This link redirects to my LinkedIn page. Would you like to continue?");
-        if (answer) {
-            window.location.href = 'https://linkedin.com/in/walshkr';
-        }
-    } 
-</script>
-
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
-
-</body>
+        <!-- Bootstrap tooltips -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+        ></script>
+        <!-- Bootstrap core JavaScript -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+        ></script>
+        <!-- MDB core JavaScript -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"
+        ></script>
+    </body>
 </html>

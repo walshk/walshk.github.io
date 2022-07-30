@@ -1,6 +1,7 @@
 /* General page styles */
-body, .list-group-item {
-    background-color: #F5F5F5 !important;
+body,
+.list-group-item {
+    background-color: #f5f5f5 !important;
 }
 
 .container {
@@ -12,12 +13,17 @@ body, .list-group-item {
     padding-top: 5px;
 }
 
+.bio-paragraph {
+    width: 100%;
+}
+
 #modules-row {
     padding-top: 10px;
     border-top: 1px solid black;
 }
 
-#work-exp-toprow, #education-toprow {
+#work-exp-toprow,
+#education-toprow {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -32,14 +38,16 @@ body, .list-group-item {
 
 /* Pic-col styles */
 #profile-pic {
-    width: 18vw;
+    width: 10vw;
+    background-color: #33b5e5;
 }
 
 #pic-col > h4 {
-    padding-top: 15px;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
 }
 
-.col-centered{
+.col-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -52,7 +60,8 @@ body, .list-group-item {
 }
 
 /* Module Selector styles */
-#selector-btn-group, .work-exp-sub-btn {
+#selector-btn-group,
+.work-exp-sub-btn {
     width: 100%;
 }
 
@@ -60,7 +69,3 @@ body, .list-group-item {
 #work-exp-botrow {
     padding-left: 15px;
 }
-
-
-
-
