@@ -10,27 +10,27 @@ export default defineComponent({
 </script>
 
 <template>
-	<b-container class="profile">
-		<b-row id="profileRow">
-			<b-col id="imageCol" cols="6">
+	<div class="profile">
+		<div id="profileRow">
+			<div id="imageCol">
 				<div id="profileImageWrapper">
 					<img id="profileImage" src="@/assets/img/kevin.jpg" />
 				</div>
-			</b-col>
-			<b-col id="nameTitleCol" cols="4">
-				<b-row>
-					<b-col>
+			</div>
+			<div id="nameTitleCol">
+				<div>
+					<div>
 						<div id="nameHeader">Kevin Walsh</div>
-					</b-col>
-				</b-row>
-				<b-row>
-					<b-col>
+					</div>
+				</div>
+				<div>
+					<div>
 						<div id="titleHeader">Full-Stack Developer</div>
-					</b-col>
-				</b-row>
-			</b-col>
-		</b-row>
-	</b-container>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <style scoped>
@@ -52,12 +52,12 @@ export default defineComponent({
 	background: white;
 	border-radius: 50%;
 	padding: 0.15rem;
-	animation: 0.85s linear 0s 1 dropIn;
+	/* animation: 0.85s linear 0s 1 dropIn; */
 }
 
 #profileImage {
-	height: 40vh;
-	width: 40vh;
+	height: 25vw;
+	width: 25vw;
 	object-fit: cover;
 	border-radius: 50%;
 }
@@ -74,15 +74,16 @@ export default defineComponent({
 }
 
 #nameHeader {
-	font-size: 6rem;
+	font-size: 8vw;
 	font-weight: normal;
 	letter-spacing: 2px;
+	margin-bottom: -2vw;
 
 	animation: 0.75s ease-in 0s 1 slideInFromRight;
 }
 
 #titleHeader {
-	font-size: 3rem;
+	font-size: 4vw;
 
 	animation: 0.85s ease-in 0s 1 slideInFromLeft;
 }

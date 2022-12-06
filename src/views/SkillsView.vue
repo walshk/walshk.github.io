@@ -1,23 +1,23 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Home from '../components/pages/home/Home.vue';
+import Skills from '../components/pages/skills/Skills.vue';
 
 export default defineComponent({
-	name: 'HomeView',
+	name: 'SkillsView',
 	components: {
-		Home,
+		Skills,
 	},
 });
 </script>
 
 <template>
-	<div class="homeView">
-		<Home />
+	<div class="skillsView">
+		<Skills />
 	</div>
 </template>
 
 <style scoped>
-.homeView {
+.skillsView {
 	height: 100%;
 	width: 100%;
 }
