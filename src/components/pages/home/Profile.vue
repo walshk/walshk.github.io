@@ -14,7 +14,10 @@ export default defineComponent({
 		<div id="profileRow">
 			<div id="imageCol">
 				<div id="profileImageWrapper">
-					<img id="profileImage" src="@/assets/img/kevin.jpg" />
+					<img
+						id="profileImage"
+						src="../../../assets/img/kevin.jpg"
+					/>
 				</div>
 			</div>
 			<div id="nameTitleCol">

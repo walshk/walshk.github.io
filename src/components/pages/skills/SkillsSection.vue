@@ -59,7 +59,7 @@ export default defineComponent({
 			<div class="skillLine" v-for="skill in sectionSkills" :key="skill">
 				<img
 					class="skillLogo"
-					:src="`src/assets/logos/${skill}.svg`"
+					:src="`../../../assets/logos/${skill}.svg`"
 					:alt="`${skill} logo`"
 				/>
 				<span class="skillName">{{ skill }}</span>
