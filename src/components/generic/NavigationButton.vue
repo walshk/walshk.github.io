@@ -30,10 +30,11 @@ export default defineComponent({
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
+	min-width: fit-content;
 	letter-spacing: 0.05rem;
 	color: white;
 	font-size: 2rem;
-	margin: 1rem 5rem;
+	margin: 1rem 5vw;
 	padding: 0.5rem 2rem;
 	background: linear-gradient(to left, transparent 50%, #90ee90 50%) right;
 	background-size: 200% 100%;

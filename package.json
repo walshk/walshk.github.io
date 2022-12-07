@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
     "bootstrap-vue": "^2.23.1",
     "bootstrap-vue-3": "^0.4.11",
     "vue": "^3.2.45",

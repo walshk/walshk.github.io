@@ -18,6 +18,8 @@ export default defineComponent({
 </template>
 
 <style>
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css');
+
 #app {
 	height: 100%;
 	overflow-x: hidden;
@@ -39,7 +41,7 @@ body {
 }
 
 .route-enter-active {
-	transition: all 0.5s ease-out;
+	transition: all 0.75s ease-in-out;
 }
 
 .route-leave-to {

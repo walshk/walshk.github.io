@@ -1,5 +1,5 @@
 <template>
-	<div class="home container">
+	<div class="home container-fluid">
 		<div class="row">
 			<div class="col-12">
 				<Profile />
@@ -7,13 +7,13 @@
 		</div>
 		<div id="navButtonsRow" class="row">
 			<div class="col-12 col-md-4">
+				<NavigationButton text="About" path="/about" />
+			</div>
+			<div class="col-12 col-md-4">
 				<NavigationButton text="Skills" path="/skills" />
 			</div>
 			<div class="col-12 col-md-4">
 				<NavigationButton text="Experience" path="/" />
-			</div>
-			<div class="col-12 col-md-4">
-				<NavigationButton text="Education" path="/" />
 			</div>
 		</div>
 	</div>
@@ -44,12 +44,14 @@ export default defineComponent({
 #navButtonsRow {
 	display: flex;
 	justify-content: center;
-
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 4vw;
 }
 
 #navButtonsRow {
-	animation: 0.85s ease-in-out floatUp;
+	animation: 1s ease-in-out floatUp;
 }
 
 @keyframes floatUp {

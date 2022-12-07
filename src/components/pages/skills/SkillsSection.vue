@@ -52,11 +52,7 @@ export default defineComponent({
 <template>
 	<div class="skillsSection col-md-4 col-12">
 		<div id="sectionTitle">
-			<img
-				:src="`src/assets/icons/${sectionIcon}.svg`"
-				:alt="`${sectionIcon} icon`"
-				class="sectionIcon"
-			/>
+			<i :class="`sectionIcon bi bi-${sectionIcon}`"></i>
 			<h1>{{ title }}</h1>
 		</div>
 		<div id="skillsList">
@@ -87,7 +83,7 @@ export default defineComponent({
 }
 
 .sectionIcon {
-	height: 4rem;
+	font-size: 3rem;
 	margin-right: 0.5rem;
 }
 

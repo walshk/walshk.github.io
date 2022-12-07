@@ -19,10 +19,10 @@ export default defineComponent({
 				<NavigationButton class="topNav" text="Home" path="/" />
 			</div>
 			<div class="col-auto navCol">
-				<NavigationButton class="topNav" text="Experience" path="/" />
+				<NavigationButton class="topNav" text="About" path="/about" />
 			</div>
 			<div class="col-auto navCol">
-				<NavigationButton class="topNav" text="Education" path="/" />
+				<NavigationButton class="topNav" text="Experience" path="/" />
 			</div>
 		</div>
 		<div id="titleRow" class="row">

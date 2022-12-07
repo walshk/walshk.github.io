@@ -56,8 +56,8 @@ export default defineComponent({
 }
 
 #profileImage {
-	height: 25vw;
-	width: 25vw;
+	height: 20vw;
+	width: 20vw;
 	object-fit: cover;
 	border-radius: 50%;
 }
@@ -79,13 +79,13 @@ export default defineComponent({
 	letter-spacing: 2px;
 	margin-bottom: -2vw;
 
-	animation: 0.75s ease-in 0s 1 slideInFromRight;
+	animation: 1s ease-in 0s 1 slideInFromRight;
 }
 
 #titleHeader {
 	font-size: 4vw;
 
-	animation: 0.85s ease-in 0s 1 slideInFromLeft;
+	animation: 1s ease-in 0s 1 slideInFromLeft;
 }
 
 @keyframes slideInFromRight {
@@ -105,28 +105,6 @@ export default defineComponent({
 
 	100% {
 		transform: translateX(0);
-	}
-}
-
-@keyframes dropIn {
-	0% {
-		transform: translateY(-200%);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
-
-@keyframes floating {
-	0% {
-		transform: translate(0, 0px);
-	}
-	50% {
-		transform: translate(0, 15px);
-	}
-	100% {
-		transform: translate(0, -0px);
 	}
 }
 </style>
