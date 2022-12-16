@@ -18,13 +18,7 @@ export default defineComponent({
 
 		const skillsByGroup: { [key: string]: string[] } = {
 			languages: ['JavaScript', 'Python', 'Bash'],
-			frameworks: [
-				'Vue.js',
-				'Node.js',
-				'Express',
-				'FastAPI',
-				'Bootstrap',
-			],
+			frameworks: ['Vue.js', 'Node.js', 'Express', 'FastAPI', 'Pytest'],
 			tools: ['Git', 'Docker', 'Kubernetes'],
 		};
 
@@ -59,7 +53,7 @@ export default defineComponent({
 			<div class="skillLine" v-for="skill in sectionSkills" :key="skill">
 				<img
 					class="skillLogo"
-					:src="`../../../assets/logos/${skill}.svg`"
+					:src="`/src/assets/logos/${skill}.svg`"
 					:alt="`${skill} logo`"
 				/>
 				<span class="skillName">{{ skill }}</span>

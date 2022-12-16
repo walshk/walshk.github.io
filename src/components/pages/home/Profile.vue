@@ -67,13 +67,12 @@ export default defineComponent({
 
 #imageCol {
 	margin-right: 2rem;
+
+	animation: 0.75s ease-in-out 0s 1 dropIn;
 }
 
 #nameTitleCol {
 	margin-left: 2rem;
-}
-
-#nameHeader {
 }
 
 #nameHeader {
@@ -82,13 +81,23 @@ export default defineComponent({
 	letter-spacing: 2px;
 	margin-bottom: -2vw;
 
-	animation: 1s ease-in 0s 1 slideInFromRight;
+	animation: 0.75s ease-in-out 0s 1 slideInFromRight;
 }
 
 #titleHeader {
 	font-size: 4vw;
 
-	animation: 1s ease-in 0s 1 slideInFromLeft;
+	animation: 0.75s ease-in-out 0s 1 slideInFromLeft;
+}
+
+@keyframes dropIn {
+	0% {
+		transform: translateY(-200%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes slideInFromRight {

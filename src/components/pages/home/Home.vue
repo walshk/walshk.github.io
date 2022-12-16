@@ -13,7 +13,7 @@
 				<NavigationButton text="Skills" path="/skills" />
 			</div>
 			<div class="col-12 col-md-4">
-				<NavigationButton text="Experience" path="/" />
+				<NavigationButton text="Experience" path="/experience" />
 			</div>
 		</div>
 	</div>
@@ -51,7 +51,7 @@ export default defineComponent({
 }
 
 #navButtonsRow {
-	animation: 1s ease-in-out floatUp;
+	animation: 0.75s ease-in-out floatUp;
 }
 
 @keyframes floatUp {

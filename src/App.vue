@@ -6,13 +6,26 @@ export default defineComponent({
 	components: {
 		RouterView,
 	},
+	mounted() {
+		this.show = true;
+	},
+	data() {
+		return {
+			show: false,
+		};
+	},
+	computed: {
+		transitionName() {
+			return this.$route.name === 'home' ? 'no-transition' : 'route';
+		},
+	},
 });
 </script>
 
 <template>
 	<RouterView v-slot="{ Component }">
-		<transition name="route" mode="out-in">
-			<component :is="Component"></component>
+		<transition :name="transitionName" mode="out-in">
+			<component v-if="show" :is="Component"></component>
 		</transition>
 	</RouterView>
 </template>
