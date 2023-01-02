@@ -15,7 +15,7 @@ export default defineComponent({
 		};
 	},
 	computed: {
-		transitionName() {
+		transitionName(): string {
 			return this.$route.name === 'home' ? 'no-transition' : 'route';
 		},
 	},

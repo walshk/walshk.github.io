@@ -1,4 +1,5 @@
 <script lang="ts">
+declare var require: any;
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -27,6 +28,14 @@ export default defineComponent({
 			skillsByGroup,
 		};
 	},
+	methods: {
+		getImageUrl(imageName: string) {
+			return new URL(
+				`../../../assets/logos/${imageName}.svg`,
+				import.meta.url
+			).href;
+		},
+	},
 	computed: {
 		lowercaseTitle() {
 			return this.title.toLowerCase();
@@ -53,7 +62,7 @@ export default defineComponent({
 			<div class="skillLine" v-for="skill in sectionSkills" :key="skill">
 				<img
 					class="skillLogo"
-					:src="`/src/assets/logos/${skill}.svg`"
+					:src="getImageUrl(skill)"
 					:alt="`${skill} logo`"
 				/>
 				<span class="skillName">{{ skill }}</span>
