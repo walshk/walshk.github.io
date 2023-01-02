@@ -84,6 +84,7 @@ export default defineComponent({
 #skillsList {
 	display: inline-block;
 	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 .skillLine {
