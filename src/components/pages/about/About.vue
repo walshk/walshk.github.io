@@ -10,9 +10,6 @@ export default defineComponent({
 	data() {
 		return {};
 	},
-	methods: {
-		downloadResume() {},
-	},
 });
 </script>
 
@@ -66,7 +63,10 @@ export default defineComponent({
 		</div>
 		<div id="resumeRow" class="row">
 			<div id="resumeCol" class="col-12">
-				<a target="_blank" href="src/assets/files/KRW_Resume.pdf">
+				<a
+					target="_blank"
+					href="https://github.com/walshk/walshk.github.io/blob/master/src/assets/files/KRW_Resume.pdf?raw=true"
+				>
 					<i class="bi bi-file-earmark-text"></i>
 				</a>
 
