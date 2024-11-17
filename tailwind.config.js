@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     colors: {
-      'elevation-1-color': '#277272',
+      'elevation-1-color': '#3A619C',
       'elevation-1-selected-color': '#3436A2'
     },
     extend: {},

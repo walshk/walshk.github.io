@@ -59,14 +59,14 @@ const experiences = [
                 Washington, DC
             </div>
             <div
-                class="position-block pb-2 pl-4"
+                class="position-block pb-2"
                 v-for="position in experience.positions"
                 :key="position.title"
             >
                 <div class="position-title text-2xl font-regular">
                     {{ position.title }} // {{ position.timeRange }}
                 </div>
-                <ul class="position-bullets pt-2 text-lg pl-4 list-disc">
+                <ul class="position-bullets pt-2 text-lg pl-8 list-disc">
                     <li
                         v-for="(bullet, index) in position.bullets"
                         :key="`${experience.employer}-${position.title}-${index}`"

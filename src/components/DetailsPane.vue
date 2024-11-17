@@ -9,8 +9,8 @@ import { ref, computed, type DefineComponent } from 'vue';
 
 const DETAILS_OPTIONS = {
     Experience: ExperienceDetails,
-    Skills: SkillsDetails,
     'Side Projects': SideProjectsDetails,
+    Skills: SkillsDetails,
     Interests: InterestsDetails,
 } as { [key: string]: any };
 
