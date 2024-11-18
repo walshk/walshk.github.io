@@ -48,16 +48,17 @@ const experiences = [
         >
             <div class="employer text-3xl font-medium flex items-center">
                 {{ experience.employer }}
+                <div
+                    class="location pl-4 brightness-[65%] font-extralight text-xl flex items-center gap-1"
+                >
+                    <font-awesome-icon
+                        class="text-sm"
+                        :icon="['fas', 'location-dot']"
+                    ></font-awesome-icon>
+                    Washington, DC
+                </div>
             </div>
-            <div
-                class="location brightness-[65%] font-extralight text-xl flex items-center gap-2"
-            >
-                <font-awesome-icon
-                    class="text-lg"
-                    :icon="['fas', 'location-dot']"
-                ></font-awesome-icon>
-                Washington, DC
-            </div>
+
             <div
                 class="position-block pb-2"
                 v-for="position in experience.positions"
