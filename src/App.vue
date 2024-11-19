@@ -17,7 +17,9 @@ const year = new Date(Date.now()).getFullYear();
         <div class="flex w-full flex-grow min-h-0">
             <DetailsPane />
         </div>
-        <div class="footer flex w-full pb-4 justify-center text-lg h-fit">
+        <div
+            class="footer flex w-full pb-2 justify-center text-lg h-fit opacity-75 font-extralight"
+        >
             &copy; Kevin Walsh 2024. All rights reserved.
         </div>
     </main>

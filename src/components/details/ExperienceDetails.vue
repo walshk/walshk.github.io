@@ -4,7 +4,7 @@ const experiences = [
         employer: 'Booz Allen Hamilton',
         positions: [
             {
-                title: 'Lead Engineer',
+                title: 'Lead Software Engineer',
                 timeRange: 'July 2021 - Present',
                 bullets: [
                     'Gathered requirements and led brainstorming sessions to design the architecture for a full-stack web application to improve user experience for an existing cyber defense capability',
@@ -14,7 +14,7 @@ const experiences = [
                 ],
             },
             {
-                title: 'Staff Engineer',
+                title: 'Staff Software Engineer',
                 timeRange: 'July 2019 - July 2021',
                 bullets: [
                     'Containerized a data visualization dashboard product using Docker to reduce local set-up times and avoid issues stemming from running the product on different machines',
@@ -25,7 +25,7 @@ const experiences = [
                 ],
             },
             {
-                title: 'Engineer',
+                title: 'Software Engineer',
                 timeRange: 'August 2018 - July 2019',
                 bullets: [
                     'Added several new features to a funding prioritization web application, eventually taking over development entirely from the former lead developer',
@@ -49,7 +49,7 @@ const experiences = [
             <div class="employer text-3xl font-medium flex items-center">
                 {{ experience.employer }}
                 <div
-                    class="location pl-4 brightness-[65%] font-extralight text-xl flex items-center gap-1"
+                    class="location pl-4 opacity-75 font-extralight text-xl flex items-center gap-1"
                 >
                     <font-awesome-icon
                         class="text-sm"
@@ -60,12 +60,15 @@ const experiences = [
             </div>
 
             <div
-                class="position-block pb-2"
+                class="position-block pb-4"
                 v-for="position in experience.positions"
                 :key="position.title"
             >
                 <div class="position-title text-2xl font-regular">
-                    {{ position.title }} // {{ position.timeRange }}
+                    {{ position.title
+                    }}<span class="font-light text-xl opacity-75"
+                        >&nbsp;// {{ position.timeRange }}</span
+                    >
                 </div>
                 <ul class="position-bullets pt-2 text-lg pl-8 list-disc">
                     <li

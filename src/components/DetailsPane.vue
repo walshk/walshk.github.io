@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import TabSelectorButton from './TabSelectorButton.vue';
 import ExperienceDetails from './details/ExperienceDetails.vue';
-import InterestsDetails from './details/InterestsDetails.vue';
 import SideProjectsDetails from './details/SideProjectsDetails.vue';
 import SkillsDetails from './details/SkillsDetails.vue';
 
@@ -11,7 +10,6 @@ const DETAILS_OPTIONS = {
     Experience: ExperienceDetails,
     Skills: SkillsDetails,
     'Side Projects': SideProjectsDetails,
-    Interests: InterestsDetails,
 } as { [key: string]: any };
 
 let activeDetailsTabName = ref('Experience');
