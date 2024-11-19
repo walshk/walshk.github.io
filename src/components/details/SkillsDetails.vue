@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import SkillBlock from './subcomponents/SkillBlock.vue';
 
-const SKILL_SVG_BASE_URL = '@/components/details/images/skills';
 const skillGroups = [
     {
         name: 'Languages',
@@ -22,15 +21,63 @@ const skillGroups = [
                 name: 'Bash',
                 svgUrl: 'https://www.svgrepo.com/show/353478/bash-icon.svg',
                 description:
-                    'Comfortable using Bash for general navigation of the filesystem, file editing in Vim, using various tools such as cat, grep, and jq. Some familiarity with shell scripting.',
+                    'Comfortable using Bash for general navigation of the filesystem, file editing in vim/neovim, using various tools such as ripgrep and jq. Some familiarity with shell scripting.',
+            },
+        ],
+    },
+    {
+        name: 'Web Development Frameworks',
+        skills: [
+            {
+                name: 'Vue.js',
+                svgUrl: 'https://www.svgrepo.com/show/452130/vue.svg',
+                description:
+                    'Very comfortable using Vue.js to build complex single-page applications using state management and making API calls, while supporting sustainability with unit and end-to-end tests.',
+            },
+            {
+                name: 'Node.js',
+                svgUrl: 'https://www.svgrepo.com/show/452075/node-js.svg',
+                description:
+                    'Very comfortable using Node.js (primarily with Express) to build REST APIs handling core application logic, file uploads, streaming responses. Some familiarity with integrating websockets.',
+            },
+            {
+                name: 'Django',
+                svgUrl: 'https://www.svgrepo.com/show/373554/django.svg',
+                description:
+                    'Comfortable building REST APIs and associated models and serializers using Django.',
+            },
+            {
+                name: 'FastAPI',
+                svgUrl: 'https://www.svgrepo.com/show/330413/fastapi.svg',
+                description:
+                    "Comfortable building REST API endpoints using Python's FastAPI library.",
+            },
+        ],
+    },
+    {
+        name: 'Application Deployment Software',
+        skills: [
+            {
+                name: 'Docker',
+                svgUrl: 'https://www.svgrepo.com/show/448221/docker.svg',
+                description:
+                    'Very comfortable building images and deploying Docker containers, including deployment of multiple containers using Docker Compose.',
+            },
+            {
+                name: 'Kubernetes',
+                svgUrl: 'https://www.svgrepo.com/show/448233/kubernetes.svg',
+                description:
+                    'Very comfortable debugging deployed resources using Kubectl to investigate pods, services, events, etc. Some familiarity creating custom resources to deploy into a Kubernetes cluster.',
+            },
+            {
+                name: 'Helm',
+                svgUrl: 'https://www.svgrepo.com/show/373664/helm.svg',
+                description:
+                    'Comfortable reading and understanding Helm chart templates. Some familiarity creating and managing Helm releases in Kubernetes.',
             },
         ],
     },
 ];
-
-function getSvgUrl(skillName: string) {
-    return `${SKILL_SVG_BASE_URL}/${skillName}.svg`;
-}
 </script>
 
 <template>

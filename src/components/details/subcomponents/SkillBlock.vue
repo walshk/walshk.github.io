@@ -12,9 +12,11 @@ const IMAGE_SIZE = '100';
 </script>
 
 <template>
-    <div class="skill-block flex items-center gap-4">
-        <div class="image">
-            <img :width="IMAGE_SIZE" :height="IMAGE_SIZE" :src="svgUrl" />
+    <div
+        class="skill-block grid grid-cols-[1fr_14fr] items-center gap-2 w-full"
+    >
+        <div class="image w-full">
+            <img width="80%" height="auto" :src="svgUrl" />
         </div>
         <div class="name-and-description">
             <div class="name text-3xl font-medium">{{ props.name }}</div>

@@ -23,21 +23,24 @@ function openExternalLink(link: ExternalLink) {
         <div class="name font-medium text-5xl">Kevin Walsh</div>
         <div class="title font-extralight text-3xl">Software Engineer</div>
         <div class="links flex gap-4 text-3xl">
-            <font-awesome-icon
-                @click="openExternalLink('github')"
-                class="external-link hover:cursor-pointer hover:text-elevation-1-color"
-                :icon="['fab', 'github']"
-            ></font-awesome-icon>
-            <font-awesome-icon
-                @click="openExternalLink('linkedin')"
-                class="external-link hover:cursor-pointer hover:text-elevation-1-color"
-                :icon="['fab', 'linkedin']"
-            ></font-awesome-icon>
-            <font-awesome-icon
-                @click="openExternalLink('email')"
-                class="external-link hover:cursor-pointer hover:text-elevation-1-color"
-                :icon="['fas', 'envelope']"
-            ></font-awesome-icon>
+            <a :href="GITHUB_URL" target="_blank">
+                <font-awesome-icon
+                    class="external-link hover:cursor-pointer hover:text-elevation-1-color"
+                    :icon="['fab', 'github']"
+                ></font-awesome-icon>
+            </a>
+            <a :href="LINKEDIN_URL" target="_blank">
+                <font-awesome-icon
+                    class="external-link hover:cursor-pointer hover:text-elevation-1-color"
+                    :icon="['fab', 'linkedin']"
+                ></font-awesome-icon>
+            </a>
+            <a :href="EMAIL_URL" target="_blank">
+                <font-awesome-icon
+                    class="external-link hover:cursor-pointer hover:text-elevation-1-color"
+                    :icon="['fas', 'envelope']"
+                ></font-awesome-icon>
+            </a>
         </div>
     </div>
 </template>
