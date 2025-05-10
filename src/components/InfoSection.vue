@@ -1,6 +1,6 @@
 <template>
-    <div class="text-xl">
-        <p class="info-text font-extralight">
+    <div class="text-lg md:text-xl px-4 md:px-0 pb-1 md:pb-0">
+        <p class="info-text font-extralight leading-[1.2] md:leading-relaxed">
             Welcome to my personal site! I'm a full-stack developer with
             professional experience primarily in the field of web development,
             but throughout my career, I've dipped my toes in several different

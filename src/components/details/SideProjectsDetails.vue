@@ -1,6 +1,6 @@
 <template>
     <div class="side-projects-details w-full flex flex-col gap-4 h-full">
-        <div class="side-project grid grid-cols-[4fr_8fr] gap-4">
+        <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
             <div class="project-image w-[100%]">
                 <a
                     href="https://theater.kwalsh.dev"
@@ -15,10 +15,10 @@
                 </a>
             </div>
             <div class="name-and-description">
-                <div class="name text-4xl font-medium">
+                <div class="name text-3xl md:text-4xl font-medium">
                     Theater of the Mind Reference
                 </div>
-                <div class="link text-xl opacity-75">
+                <div class="link text-lg md:text-xl opacity-75">
                     <a
                         href="https://theater.kwalsh.dev"
                         target="_blank"
@@ -26,7 +26,7 @@
                         >// theater.kwalsh.dev</a
                     >
                 </div>
-                <div class="description text-lg font-light">
+                <div class="description text-base md:text-lg font-light">
                     A web application that I created after having too many D&D
                     sessions where our group had trouble keeping track of where
                     everyone was relative to one another in combat scenarios.
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="side-project grid grid-cols-[4fr_8fr] gap-4">
+        <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
             <div class="project-image w-[100%]">
                 <a
                     href="https://walshk1023.itch.io/bigger-than-your-worries"
@@ -55,10 +55,10 @@
                 </a>
             </div>
             <div class="name-and-description">
-                <div class="name text-4xl font-medium">
+                <div class="name text-3xl md:text-4xl font-medium">
                     Bigger than your Worries
                 </div>
-                <div class="link text-xl opacity-75">
+                <div class="link text-lg md:text-xl opacity-75">
                     <a
                         href="https://walshk1023.itch.io/bigger-than-your-worries"
                         target="_blank"
@@ -66,7 +66,7 @@
                         >// walshk1023.itch.io/bigger-than-your-worries</a
                     >
                 </div>
-                <div class="description text-lg font-light">
+                <div class="description text-base md:text-lg font-light">
                     A small game that I co-created with Adam VK using the Godot
                     Engine. We developed this as part of the 2024 GMTK Game Jam,
                     and completed the game within 48 hours - coming up with the

@@ -4,7 +4,7 @@ import ExperienceDetails from './details/ExperienceDetails.vue';
 import SideProjectsDetails from './details/SideProjectsDetails.vue';
 import SkillsDetails from './details/SkillsDetails.vue';
 
-import { ref, computed, type DefineComponent } from 'vue';
+import { ref, computed, watch } from 'vue';
 
 const DETAILS_OPTIONS = {
     Experience: ExperienceDetails,
@@ -29,15 +29,25 @@ function isActiveTab(tabName: string) {
 function setActiveTab(tabName: string) {
     activeDetailsTabName.value = tabName;
 }
+
+// Add watcher to scroll to top when tab changes
+watch(activeDetailsTabName, () => {
+    const detailsPane = document.querySelector('.details');
+    if (detailsPane) {
+        detailsPane.scrollTop = 0;
+    }
+});
 </script>
 
 <template>
     <div class="details-pane flex flex-col gap-4 w-full h-full">
-        <div class="tab-selectors flex flex-row w-full gap-4">
+        <div
+            class="tab-selectors flex flex-col md:flex-row w-full gap-2 md:gap-4"
+        >
             <div
                 v-for="tabName in tabNames"
                 :key="tabName"
-                class="flex justify-center items-center text-xl"
+                class="flex justify-center items-center text-lg md:text-xl w-full md:w-auto"
             >
                 <TabSelectorButton
                     @selected="setActiveTab(tabName)"
@@ -46,7 +56,9 @@ function setActiveTab(tabName: string) {
                 />
             </div>
         </div>
-        <div class="details overflow-y-auto h-full">
+        <div
+            class="details overflow-y-auto h-full px-4 md:px-0 custom-scrollbar"
+        >
             <component :is="activeDetailsComponent" />
         </div>
     </div>

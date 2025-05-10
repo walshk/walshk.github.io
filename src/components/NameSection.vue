@@ -20,9 +20,11 @@ function openExternalLink(link: ExternalLink) {
 
 <template>
     <div class="flex flex-col gap-1">
-        <div class="name font-medium text-5xl">Kevin Walsh</div>
-        <div class="title font-extralight text-3xl">Software Engineer</div>
-        <div class="links flex gap-4 text-3xl">
+        <div class="name font-medium text-3xl md:text-5xl">Kevin Walsh</div>
+        <div class="title font-extralight text-2xl md:text-3xl">
+            Software Engineer
+        </div>
+        <div class="links flex gap-4 text-2xl md:text-3xl">
             <a :href="GITHUB_URL" target="_blank">
                 <font-awesome-icon
                     class="external-link hover:cursor-pointer hover:text-elevation-1-color"
