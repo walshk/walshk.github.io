@@ -10,7 +10,7 @@ const experiences = [
                     "Overhauled the development team's documentation process to remove duplicative work by migrating to the mkdocs framework and improved developer access to documentation by creating and deploying a Helm chart for the documentation in the team's Kubernetes cluster",
                     "Interfaced with customers to kick off several new deployments of the team's product and delegated debugging efforts to junior team members to strengthen the wider team's relationships with customers",
                     'Worked with project managers and the development team to establish roadmaps for near-term and long-term product releases',
-                    'Assisted project managers in communicating complex technical enhancements to customers in a way that was both accurate and accessible to non-technical stakeholders',
+                    'Assisted project managers in communicating complex technical enhancements in a way that was both accurate and accessible to non-technical stakeholders',
                 ],
             },
             {
