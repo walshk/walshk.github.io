@@ -1,12 +1,24 @@
+import './assets/main.css';
+
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
+/* import the fontawesome core */
+import {
+    library,
+    type IconDefinition,
+} from '@fortawesome/fontawesome-svg-core';
 
-const app = createApp(App);
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-app.use(router);
+/* import specific icons */
+import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
 
-app.mount('#app');
+/* add icons to the library */
+library.add(faEnvelope, faLocationDot);
+library.add(faGithub as IconDefinition);
+library.add(faLinkedin as IconDefinition);
+
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
