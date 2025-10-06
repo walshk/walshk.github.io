@@ -23,10 +23,14 @@ const skillGroups = [
                 description:
                     'Comfortable using Bash for general navigation of the filesystem, file editing in vim/neovim, using various tools such as ripgrep and jq. Some familiarity with shell scripting.',
             },
+            {
+                name: 'Groovy',
+                svgUrl: 'https://www.svgrepo.com/show/373699/jenkins.svg',
+            },
         ],
     },
     {
-        name: 'Web Development Frameworks',
+        name: 'Frameworks',
         skills: [
             {
                 name: 'Vue.js',
@@ -55,7 +59,7 @@ const skillGroups = [
         ],
     },
     {
-        name: 'Application Deployment Software',
+        name: 'Deployment',
         skills: [
             {
                 name: 'Docker',
@@ -77,11 +81,30 @@ const skillGroups = [
             },
         ],
     },
+    {
+        name: 'Automation',
+        skills: [
+            {
+                name: 'Github Actions',
+                svgUrl: 'https://www.svgrepo.com/show/475654/github-color.svg',
+            },
+            {
+                name: 'Gitlab CI/CD',
+                svgUrl: 'https://www.svgrepo.com/show/448226/gitlab.svg',
+            },
+            {
+                name: 'Jenkins',
+                svgUrl: 'https://www.svgrepo.com/show/373699/jenkins.svg',
+            },
+        ],
+    },
 ];
 </script>
 
 <template>
-    <div class="skills-details">
+    <div
+        class="skills-details flex lg:flex-row flex-col items-start justify-between"
+    >
         <div
             class="group-block pb-8"
             v-for="skillGroup in skillGroups"

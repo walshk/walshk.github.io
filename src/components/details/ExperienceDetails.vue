@@ -7,10 +7,11 @@ const experiences = [
                 title: 'Senior Lead Software Engineer',
                 timeRange: 'January 2025 - Present',
                 bullets: [
-                    "Overhauled the development team's documentation process to remove duplicative work by migrating to the mkdocs framework and improved developer access to documentation by creating and deploying a Helm chart for the documentation in the team's Kubernetes cluster",
-                    "Interfaced with customers to kick off several new deployments of the team's product and delegated debugging efforts to junior team members to strengthen the wider team's relationships with customers",
-                    'Worked with project managers and the development team to establish roadmaps for near-term and long-term product releases',
-                    'Assisted project managers in communicating complex technical enhancements in a way that was both accurate and accessible to non-technical stakeholders',
+                    'Increased team understanding of future priorities by developing a product roadmap and prioritizing key features for a secure AI inference platform.',
+                    'Improved product security posture and team development standards by implementing reusable Github Actions workflows to automate image scans and PR checks across multiple repositories containing more than 20 images.',
+                    "Overhauled the development team's documentation process to remove duplicative work by migrating to a new documentation framework and improved developer access to documentation by creating and deploying a Helm chart for the documentation in the team's Kubernetes cluster.",
+                    'Expanded product adoption by leading several client engagements to deploy the secure AI inference platform in different types of Kubernetes clusters (e.g., OpenShift, K3s) using different client-preferred toolsets (e.g., ArgoCD, Gitlab CI/CD).',
+                    'Reduced inefficiencies in decision-making after being designated as the go-to engineer for any product decisions where engineers were at an impasse.',
                 ],
             },
             {
@@ -68,7 +69,7 @@ const experiences = [
                         :icon="['fas', 'location-dot']"
                     ></font-awesome-icon>
                     <span class="translate-y-[1px] font-light"
-                        >Washington, DC</span
+                        >Washington, DC / Remote</span
                     >
                 </div>
             </div>

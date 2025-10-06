@@ -82,6 +82,42 @@
                     sizes of each worry circle and associated challenge!
                 </div>
             </div>
+            <div class="project-image w-[100%]">
+                <a
+                    href="https://walshk1023.itch.io/hello-again"
+                    target="_blank"
+                    class="hover:opacity-50 transition-opacity"
+                >
+                    <img
+                        src="@/assets/images/hello-again.png"
+                        width="100%"
+                        height="auto"
+                    />
+                </a>
+            </div>
+            <div class="name-and-description">
+                <div class="name text-3xl md:text-4xl font-medium">
+                    Hello Again
+                </div>
+                <div class="link text-lg md:text-xl opacity-75">
+                    <a
+                        href="https://walshk1023.itch.io/hello-again"
+                        target="_blank"
+                        class="font-extralight hover:text-elevation-1-color"
+                        >// walshk1023.itch.io/hello-again</a
+                    >
+                </div>
+                <div class="description text-base md:text-lg font-light">
+                    Another small game that I co-created with Adam VK using the
+                    Godot Engine. This one was for the 2025 GMTK Game Jam where
+                    the theme was "Loop", so we decided to make a game that
+                    included a reincarnation loop. In the game, you play as a
+                    human, a chicken, or a cow, and can walk around and chat
+                    with your compatriots on the island, until a surprise
+                    visitor arrives. This one was extra fun for me as I also
+                    created the music for the game myself using Ableton Live 11!
+                </div>
+            </div>
         </div>
     </div>
 </template>

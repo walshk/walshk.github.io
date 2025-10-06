@@ -21,9 +21,5 @@ const IMAGE_SIZE = '100';
                 {{ props.name }}
             </div>
         </div>
-        <div class="description text-lg md:text-2xl font-light">
-            <span class="opacity-50">•</span>
-            {{ props.description }}
-        </div>
     </div>
 </template>
