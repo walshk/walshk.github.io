@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const props = defineProps({
     name: String,
-    description: String,
     svgUrl: {
         type: String,
         required: true,

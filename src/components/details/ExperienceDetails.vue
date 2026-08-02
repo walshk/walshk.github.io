@@ -4,7 +4,7 @@ const experiences = [
         employer: 'Booz Allen Hamilton',
         positions: [
             {
-                title: 'Senior Lead Software Engineer',
+                title: 'Software Engineer, Lead',
                 timeRange: 'January 2025 - Present',
                 bullets: [
                     'Increased team understanding of future priorities by developing a product roadmap and prioritizing key features for a secure AI inference platform.',
@@ -15,7 +15,7 @@ const experiences = [
                 ],
             },
             {
-                title: 'Lead Software Engineer',
+                title: 'Software Engineer, 3',
                 timeRange: 'July 2021 - January 2025',
                 bullets: [
                     'Gathered requirements and led brainstorming sessions to design the architecture for a full-stack web application to improve user experience for an existing cyber defense capability',
@@ -25,7 +25,7 @@ const experiences = [
                 ],
             },
             {
-                title: 'Staff Software Engineer',
+                title: 'Software Engineer, 2',
                 timeRange: 'July 2019 - July 2021',
                 bullets: [
                     'Containerized a data visualization dashboard product using Docker to reduce local set-up times and avoid issues stemming from running the product on different machines',
@@ -36,7 +36,7 @@ const experiences = [
                 ],
             },
             {
-                title: 'Software Engineer',
+                title: 'Software Engineer, 1',
                 timeRange: 'August 2018 - July 2019',
                 bullets: [
                     'Added several new features to a funding prioritization web application, eventually taking over development entirely from the former lead developer',

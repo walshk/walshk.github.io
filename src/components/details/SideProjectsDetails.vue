@@ -3,6 +3,37 @@
         <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
             <div class="project-image w-[100%]">
                 <a
+                    href="https://walshk1023.itch.io/earn-your-time"
+                    target="_blank"
+                    class="hover:opacity-50 transition-opacity"
+                >
+                    <img
+                        src="@/assets/images/earn-your-time-logo.PNG"
+                        width="100%"
+                        height="auto"
+                    />
+                </a>
+            </div>
+            <div class="name-and-description">
+                <div class="name text-3xl md:text-4xl font-medium">
+                    Earn Your Time
+                </div>
+                <div class="link text-lg md:text-xl opacity-75">
+                    <a
+                        href="https://walshk1023.itch.io/earn-your-time"
+                        target="_blank"
+                        class="font-extralight hover:text-elevation-1-color"
+                        >// walshk1023.itch.io/earn-your-time</a
+                    >
+                </div>
+                <div class="description text-base md:text-lg font-light">
+                    A race-against-the-clock trivia game that I co-created with Adam VK for the 2026 GMTK Game Jam. The theme of the jam was "Count Down" so we made a game where you need to keep answering trivia questions and solving math problems to keep a countdown clock from hitting zero. Our focus during this jam was taking an idea that isn't necessarily all that interesting and making it as fun to play as possible by having engaging music and sound effects alongside smooth animations and vibrant colors.
+                </div>
+            </div>
+        </div>
+        <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
+            <div class="project-image w-[100%]">
+                <a
                     href="https://theater.kwalsh.dev"
                     target="_blank"
                     class="hover:opacity-50 transition-opacity"
