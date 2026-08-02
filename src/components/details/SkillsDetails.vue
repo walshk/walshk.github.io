@@ -47,7 +47,7 @@ const skillGroups = [
                 svgUrl: 'https://www.svgrepo.com/show/330413/fastapi.svg',
             },
             {
-                name: 'Operator Framework',
+                name: 'Operator SDK',
                 svgUrl: 'https://avatars.githubusercontent.com/u/38202270?s=280&v=4',
             }
         ],
