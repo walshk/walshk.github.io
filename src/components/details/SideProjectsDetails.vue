@@ -1,0 +1,154 @@
+<template>
+    <div class="side-projects-details w-full flex flex-col gap-4 h-full">
+        <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
+            <div class="project-image w-[100%]">
+                <a
+                    href="https://walshk1023.itch.io/earn-your-time"
+                    target="_blank"
+                    class="hover:opacity-50 transition-opacity"
+                >
+                    <img
+                        src="@/assets/images/earn-your-time-logo.PNG"
+                        width="100%"
+                        height="auto"
+                    />
+                </a>
+            </div>
+            <div class="name-and-description">
+                <div class="name text-3xl md:text-4xl font-medium">
+                    Earn Your Time
+                </div>
+                <div class="link text-lg md:text-xl opacity-75">
+                    <a
+                        href="https://walshk1023.itch.io/earn-your-time"
+                        target="_blank"
+                        class="font-extralight hover:text-elevation-1-color"
+                        >// walshk1023.itch.io/earn-your-time</a
+                    >
+                </div>
+                <div class="description text-base md:text-lg font-light">
+                    A race-against-the-clock trivia game that I co-created with Adam VK for the 2026 GMTK Game Jam. The theme of the jam was "Count Down" so we made a game where you need to keep answering trivia questions and solving math problems to keep a countdown clock from hitting zero. Our focus during this jam was taking an idea that isn't necessarily all that interesting and making it as fun to play as possible by having engaging music and sound effects alongside smooth animations and vibrant colors.
+                </div>
+            </div>
+        </div>
+        <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
+            <div class="project-image w-[100%]">
+                <a
+                    href="https://theater.kwalsh.dev"
+                    target="_blank"
+                    class="hover:opacity-50 transition-opacity"
+                >
+                    <img
+                        src="@/assets/images/tomr-example.PNG"
+                        width="100%"
+                        height="auto"
+                    />
+                </a>
+            </div>
+            <div class="name-and-description">
+                <div class="name text-3xl md:text-4xl font-medium">
+                    Theater of the Mind Reference
+                </div>
+                <div class="link text-lg md:text-xl opacity-75">
+                    <a
+                        href="https://theater.kwalsh.dev"
+                        target="_blank"
+                        class="font-extralight hover:text-elevation-1-color"
+                        >// theater.kwalsh.dev</a
+                    >
+                </div>
+                <div class="description text-base md:text-lg font-light">
+                    A web application that I created after having too many D&D
+                    sessions where our group had trouble keeping track of where
+                    everyone was relative to one another in combat scenarios.
+                    The main features I've added based on feedback from the
+                    group in addition to displaying moveable objects on a canvas
+                    are a layer manager to update the relative z-indices of
+                    objects, a dice roller widget, and a roll log to display
+                    results of past dice rolls. Information about changes to the
+                    canvas and results of dice rolls is distributed via
+                    websocket and then updated in each player's client.
+                </div>
+            </div>
+        </div>
+        <div class="side-project grid grid-cols-1 md:grid-cols-[4fr_8fr] gap-4">
+            <div class="project-image w-[100%]">
+                <a
+                    href="https://walshk1023.itch.io/bigger-than-your-worries"
+                    target="_blank"
+                    class="hover:opacity-50 transition-opacity"
+                >
+                    <img
+                        src="@/assets/images/bigger-than-worries-example.PNG"
+                        width="100%"
+                        height="auto"
+                    />
+                </a>
+            </div>
+            <div class="name-and-description">
+                <div class="name text-3xl md:text-4xl font-medium">
+                    Bigger than your Worries
+                </div>
+                <div class="link text-lg md:text-xl opacity-75">
+                    <a
+                        href="https://walshk1023.itch.io/bigger-than-your-worries"
+                        target="_blank"
+                        class="font-extralight hover:text-elevation-1-color"
+                        >// walshk1023.itch.io/bigger-than-your-worries</a
+                    >
+                </div>
+                <div class="description text-base md:text-lg font-light">
+                    A small game that I co-created with Adam VK using the Godot
+                    Engine. We developed this as part of the 2024 GMTK Game Jam,
+                    and completed the game within 48 hours - coming up with the
+                    idea on Friday night and publishing the final changes on
+                    Sunday afternoon. The game is fairly simple - you move a
+                    circle around an area and absorb worry circles that are
+                    smaller than you, while avoiding worry circles that are
+                    bigger than you. As you absorb smaller worries, your circle
+                    gets larger until you can absorb every worry. Additionally,
+                    you can absorb a "challenge" which will allow you to absorb
+                    a specific worry that is larger than you. The neat part -
+                    you can use a form in the menu to customize the names and
+                    sizes of each worry circle and associated challenge!
+                </div>
+            </div>
+            <div class="project-image w-[100%]">
+                <a
+                    href="https://walshk1023.itch.io/hello-again"
+                    target="_blank"
+                    class="hover:opacity-50 transition-opacity"
+                >
+                    <img
+                        src="@/assets/images/hello-again.png"
+                        width="100%"
+                        height="auto"
+                    />
+                </a>
+            </div>
+            <div class="name-and-description">
+                <div class="name text-3xl md:text-4xl font-medium">
+                    Hello Again
+                </div>
+                <div class="link text-lg md:text-xl opacity-75">
+                    <a
+                        href="https://walshk1023.itch.io/hello-again"
+                        target="_blank"
+                        class="font-extralight hover:text-elevation-1-color"
+                        >// walshk1023.itch.io/hello-again</a
+                    >
+                </div>
+                <div class="description text-base md:text-lg font-light">
+                    Another small game that I co-created with Adam VK using the
+                    Godot Engine. This one was for the 2025 GMTK Game Jam where
+                    the theme was "Loop", so we decided to make a game that
+                    included a reincarnation loop. In the game, you play as a
+                    human, a chicken, or a cow, and can walk around and chat
+                    with your compatriots on the island, until a surprise
+                    visitor arrives. This one was extra fun for me as I also
+                    created the music for the game myself using Ableton Live 11!
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
